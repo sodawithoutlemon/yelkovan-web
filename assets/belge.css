@@ -1,0 +1,86 @@
+/* Yelkovan · belge sayfaları (hukuki metinler, uygulama tanıtım ve destek sayfaları).
+   site.css'in belirteçlerini ve bileşenlerini kullanır; yalnız uzun metin düzenini ekler. */
+
+.belge-sayfa { padding-top: calc(72px + clamp(36px, 6vw, 80px)); padding-bottom: clamp(64px, 9vw, 120px); }
+.belge { max-width: 760px; }
+.belge-ust { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-bottom: 20px; }
+.belge-ust a.bolum-etiket:hover { color: var(--metin); }
+.belge h1 { font-size: clamp(38px, 5.6vw, 68px); line-height: 1.02; letter-spacing: -0.045em; }
+.belge .tarih { margin-top: 18px; font-size: 14px; color: var(--soluk); }
+.belge .ozet { margin-top: 24px; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.6; color: var(--ikincil); }
+.belge h2 { margin-top: 56px; padding-top: 26px; border-top: 1px solid var(--cizgi); font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2; letter-spacing: -0.025em; scroll-margin-top: 96px; }
+.belge h3 { margin-top: 28px; font-size: 18px; line-height: 1.3; letter-spacing: -0.015em; }
+.belge h2 + p, .belge h3 + p, .belge h2 + ul, .belge h3 + ul, .belge h2 + ol, .belge h2 + .tablo { margin-top: 14px; }
+.belge p, .belge li, .belge td { color: var(--ikincil); }
+.belge strong, .belge th { color: var(--metin); font-weight: 500; }
+.belge p + p, .belge ul + p, .belge ol + p, .belge .tablo + p, .belge p + .not, .belge ul + .not { margin-top: 14px; }
+.belge p + ul, .belge p + ol, .belge p + .tablo { margin-top: 12px; }
+.belge ul, .belge ol { margin-bottom: 0; padding-left: 1.25em; display: grid; gap: 8px; }
+.belge li::marker { color: var(--soluk); }
+.belge :is(p, li, td) a { color: var(--metin); text-decoration: underline; text-decoration-color: var(--cizgi-guclu); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; transition: text-decoration-color .25s; }
+.belge :is(p, li, td) a:hover { text-decoration-color: currentColor; }
+
+/* kutu: kısa özet ya da uyarı */
+.not { margin-top: 28px; padding: 20px 22px; border-radius: 18px; background: var(--yuzey); box-shadow: 0 0 0 1px var(--cizgi); }
+.not ul { gap: 6px; }
+.not p + ul { margin-top: 10px; }
+
+/* tablo: dar ekranda satırlar karta döner */
+.tablo { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
+.tablo th, .tablo td { text-align: left; vertical-align: top; padding: 12px 16px 12px 0; border-top: 1px solid var(--cizgi); }
+.tablo thead th { border-top: 0; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--soluk); font-weight: 500; }
+.tablo td:first-child { color: var(--metin); font-weight: 500; }
+@media (max-width: 640px) {
+  .tablo thead { display: none; }
+  .tablo, .tablo tbody, .tablo tr, .tablo td { display: block; width: 100%; }
+  .tablo tr { padding: 14px 0; border-top: 1px solid var(--cizgi); }
+  .tablo td { border: 0; padding: 3px 0; }
+  .tablo td[data-b]::before { content: attr(data-b) " · "; color: var(--soluk); }
+}
+
+/* uygulama sayfalarında üstte gezinme hapları */
+.sekme-gez { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: clamp(28px, 4vw, 44px); }
+.sekme-gez a { font-size: 14px; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--cizgi); color: var(--ikincil); transition: color .25s, border-color .25s; }
+.sekme-gez a:hover { color: var(--metin); border-color: var(--cizgi-guclu); }
+.sekme-gez a[aria-current="page"] { color: var(--ters-metin); background: var(--ters-bg); border-color: var(--ters-bg); }
+
+/* belge ve ek listeleri */
+.dizin { list-style: none; padding: 0 !important; margin-top: 16px; display: grid; gap: 0 !important; border-bottom: 1px solid var(--cizgi); }
+.dizin > li { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 4px 16px; align-items: center; padding: 16px 0; border-top: 1px solid var(--cizgi); }
+.dizin > li.yazili { grid-template-columns: minmax(0, 1fr); }
+.dizin img { width: 44px; height: 44px; border-radius: 11px; box-shadow: 0 0 0 1px var(--cizgi); grid-row: span 2; }
+.dizin b { color: var(--metin); font-weight: 600; font-size: 18px; letter-spacing: -0.02em; }
+.dizin span { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 15px; }
+.dizin > li > a { color: var(--metin); font-size: 18px; font-weight: 500; letter-spacing: -0.015em; justify-self: start; }
+.dizin > li > a:hover { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.dizin small { display: block; font-size: 15px; color: var(--ikincil); }
+
+/* uygulama tanıtım sayfası */
+.belge.urun-kap { max-width: none; }
+.urun-kap .urun-son h2:first-child { margin-top: 0; }
+.urun { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(28px, 5vw, 72px); align-items: start; }
+.urun > div:first-child { padding-top: clamp(0px, 4vw, 56px); }
+.urun-ikon { width: 88px; height: 88px; border-radius: 21px; box-shadow: 0 0 0 1px var(--cizgi), var(--golge); margin-bottom: 26px; }
+.urun h1 { font-size: clamp(46px, 6.4vw, 92px); line-height: .98; letter-spacing: -0.048em; }
+.urun h1 em { font-style: normal; color: var(--vurgu); }
+.urun .ozet { max-width: 30em; }
+.urun .uyg-baglar { justify-content: flex-start; margin-top: 30px; }
+.urun-gorsel { justify-self: end; width: min(100%, 300px); aspect-ratio: 600 / 1304; border-radius: clamp(20px, 2.4vw, 30px); overflow: hidden; background: var(--yuzey);
+  box-shadow: 0 0 0 1px var(--cizgi), 0 40px 80px -36px rgba(0, 0, 0, .6); }
+.urun-gorsel img { width: 100%; height: 100%; object-fit: cover; }
+.kunye { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.urun-ozellik { margin-top: clamp(64px, 9vw, 120px); }
+.urun-ozellik .ilke p { font-size: 16px; }
+.urun-son { margin-top: clamp(56px, 8vw, 96px); max-width: 760px; }
+
+/* kısa alt bilgi */
+.alt.kisa { padding-top: 28px; }
+.alt.kisa .alt-son { margin-top: 0; padding-top: 0; border-top: 0; align-items: center; }
+.alt-baglar { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.alt-baglar a { color: var(--ikincil); transition: color .25s; }
+.alt-baglar a:hover { color: var(--metin); }
+
+@media (max-width: 860px) {
+  .urun { grid-template-columns: 1fr; }
+  .urun-gorsel { justify-self: start; width: min(78%, 300px); }
+}
