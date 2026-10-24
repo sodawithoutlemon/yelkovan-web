@@ -1,4 +1,4 @@
-/* Yelkovan · yelkovan.ai — küçük etkileşimler: tema, üst şerit, görünme, sayaç, imleç ışığı, açılış animasyonu. */
+/* Yelkovan · yelkovan.ai — küçük etkileşimler: tema, üst şerit, görünme, imleç ışığı, açılış animasyonu, vitrin. */
 (function () {
   'use strict';
   var kok = document.documentElement;
@@ -39,26 +39,6 @@
     gozlenenler.forEach(function (el) { gozcu.observe(el); });
   } else {
     gozlenenler.forEach(function (el) { el.classList.add('gorundu'); });
-  }
-
-  /* sayaçlar */
-  var sayilar = document.querySelectorAll('[data-sayi]');
-  function say(el) {
-    var hedef = parseInt(el.dataset.sayi, 10), bas = null, sure = 1400;
-    if (azHareket) { el.textContent = hedef; return; }
-    function adim(t) {
-      if (bas === null) bas = t;
-      var p = Math.min(1, (t - bas) / sure), e = 1 - Math.pow(1 - p, 4);
-      el.textContent = Math.round(hedef * e);
-      if (p < 1) requestAnimationFrame(adim);
-    }
-    requestAnimationFrame(adim);
-  }
-  if ('IntersectionObserver' in window) {
-    var sayGozcu = new IntersectionObserver(function (girdiler) {
-      girdiler.forEach(function (g) { if (g.isIntersecting) { say(g.target); sayGozcu.unobserve(g.target); } });
-    }, { threshold: 0.6 });
-    sayilar.forEach(function (el) { el.textContent = '0'; sayGozcu.observe(el); });
   }
 
   /* uygulama satırlarında imleci izleyen ışık */

@@ -60,27 +60,26 @@
 .urun-kap .urun-son h2:first-child { margin-top: 0; }
 .urun { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(28px, 5vw, 72px); align-items: start; }
 .urun > div:first-child { padding-top: clamp(0px, 4vw, 56px); }
-.urun-ikon { width: 88px; height: 88px; border-radius: 21px; box-shadow: 0 0 0 1px var(--cizgi), var(--golge); margin-bottom: 26px; }
-.urun h1 { font-size: clamp(46px, 6.4vw, 92px); line-height: .98; letter-spacing: -0.048em; }
+.urun-ikon { width: 72px; height: 72px; border-radius: 17px; box-shadow: 0 0 0 1px var(--cizgi), var(--golge); margin-bottom: 24px; }
+.urun h1 { font-size: clamp(42px, 5.6vw, 84px); line-height: 1; letter-spacing: -0.045em; }
 .urun h1 em { font-style: normal; color: var(--vurgu); }
 .urun .ozet { max-width: 30em; }
-.urun .uyg-baglar { justify-content: flex-start; margin-top: 30px; }
+.urun .uyg-baglar { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.urun .magaza { min-width: 143px; }
 .urun-gorsel { justify-self: end; width: min(100%, 300px); aspect-ratio: 600 / 1304; border-radius: clamp(20px, 2.4vw, 30px); overflow: hidden; background: var(--yuzey);
   box-shadow: 0 0 0 1px var(--cizgi), 0 40px 80px -36px rgba(0, 0, 0, .6); }
 .urun-gorsel img { width: 100%; height: 100%; object-fit: cover; }
-.kunye { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
-.urun-ozellik { margin-top: clamp(64px, 9vw, 120px); }
-.urun-ozellik .ilke p { font-size: 16px; }
+/* künye: ana sayfadaki bilgi satırı gibi (Oyun · Ücretsiz · iOS · Android · 7 dil) */
+.kunye { display: flex; flex-wrap: wrap; margin-top: 16px; font-size: 14px; color: var(--soluk); }
+.kunye .etiket + .etiket::before { content: "·"; padding-inline: 8px; }
+.urun-ozellik { margin-top: clamp(64px, 9vw, 120px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 36px; }
+.urun-ozellik .ilke { padding-top: 22px; border-top: 1px solid var(--cizgi); }
+.belge .urun-ozellik h3 { margin-top: 0; font-size: 18px; }
+.belge .urun-ozellik .ilke p { margin-top: 8px; font-size: 15px; line-height: 1.55; }
 .urun-son { margin-top: clamp(56px, 8vw, 96px); max-width: 760px; }
-
-/* kısa alt bilgi */
-.alt.kisa { padding-top: 28px; }
-.alt.kisa .alt-son { margin-top: 0; padding-top: 0; border-top: 0; align-items: center; }
-.alt-baglar { display: flex; flex-wrap: wrap; gap: 6px 18px; }
-.alt-baglar a { color: var(--ikincil); transition: color .25s; }
-.alt-baglar a:hover { color: var(--metin); }
 
 @media (max-width: 860px) {
   .urun { grid-template-columns: 1fr; }
   .urun-gorsel { justify-self: start; width: min(78%, 300px); }
+  .urun-ozellik { grid-template-columns: 1fr; }
 }

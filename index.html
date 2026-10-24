@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Yelkovan · Her gün açılan uygulamalar</title>
+<title>Yelkovan · Mobil uygulama stüdyosu</title>
 <meta name="description" content="Yelkovan, Sorula, Faby, Astronova, Telveli ve Wonderwhy'ı tasarlayan ve geliştiren mobil uygulama stüdyosu. iOS ve Android'de, dokuz dilde.">
 <link rel="canonical" href="https://yelkovan.ai/">
 <link rel="alternate" hreflang="tr" href="https://yelkovan.ai/">
@@ -33,7 +33,7 @@
   /* açılış animasyonu: sekme başına bir kez, hareketi azalt kapalıysa */
   (function () { var d = document.documentElement; try { if (!sessionStorage.getItem('yk-acilis') && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) { d.classList.add('acilis', 'bekle'); d.style.setProperty('--S', Math.min(3, (window.innerWidth - 48) / 150).toFixed(2)); window.ykAcilisYedek = setTimeout(function () { d.classList.remove('acilis', 'bekle'); }, 6000); } } catch (e) {} })();
 </script>
-<link rel="stylesheet" href="assets/site.css?v=1">
+<link rel="stylesheet" href="assets/site.css?v=9">
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,7 +58,7 @@
       },
       {
         "@type": "ItemList",
-        "name": "Üç uygulama, tek atölye.",
+        "name": "Yelkovan uygulamaları",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -66,7 +66,7 @@
             "item": {
               "@type": "MobileApplication",
               "name": "Sorula",
-              "description": "TYT, AYT, LGS ve KPSS için soru bankası, deneme sınavları ve konu testleri. Türkiye'nin ulusal sınavlarına her gün biraz daha hazır.",
+              "description": "Öğrencileri TYT, AYT, LGS ve KPSS'ye hazırlayan uygulama.",
               "operatingSystem": "iOS, Android",
               "applicationCategory": "Eğitim",
               "inLanguage": [
@@ -90,7 +90,7 @@
             "item": {
               "@type": "MobileApplication",
               "name": "Faby",
-              "description": "Kahramanı çocuğunuz olan, resimli ve kişiye özel uyku masalları. Adını, temasını ve vereceği değeri siz seçin; masal yaşına göre yazılsın.",
+              "description": "Kahramanı çocuğunuz olan, kişiye özel uyku masalları.",
               "operatingSystem": "iOS, Android",
               "applicationCategory": "Çocuk ve aile",
               "inLanguage": [
@@ -122,7 +122,7 @@
             "item": {
               "@type": "MobileApplication",
               "name": "Astronova",
-              "description": "Tek dokunuşla oynanan, sonsuz dikey bir uzay tırmanışı. Kanca at, hızlan, kaç ve yükselmeye devam et.",
+              "description": "Tek dokunuşla oynanan sonsuz bir uzay oyunu.",
               "operatingSystem": "iOS, Android",
               "applicationCategory": "Oyun",
               "inLanguage": [
@@ -139,7 +139,7 @@
                 "price": "0",
                 "priceCurrency": "USD"
               },
-              "url": "https://apps.apple.com/app/id6802215464",
+              "url": "https://yelkovan.ai/astronova/",
               "sameAs": [
                 "https://apps.apple.com/app/id6802215464",
                 "https://play.google.com/store/apps/details?id=com.gkm.project_control"
@@ -152,7 +152,7 @@
             "item": {
               "@type": "MobileApplication",
               "name": "Telveli",
-              "description": "Tarot, iskambil ve aşk falları. Kartlarını seç, yorumunu birkaç saniyede oku.",
+              "description": "Tarot, iskambil ve Türk kahvesi falı.",
               "operatingSystem": "Android",
               "applicationCategory": "Yaşam tarzı",
               "inLanguage": [
@@ -166,7 +166,7 @@
                 "price": "0",
                 "priceCurrency": "USD"
               },
-              "url": "https://play.google.com/store/apps/details?id=com.ay.telveli",
+              "url": "https://yelkovan.ai/telveli/",
               "sameAs": [
                 "https://play.google.com/store/apps/details?id=com.ay.telveli"
               ]
@@ -178,7 +178,7 @@
             "item": {
               "@type": "MobileApplication",
               "name": "Wonderwhy",
-              "description": "Seçtiğin konulardan birkaç dakikalık sesli haber bülteni. Dinlerken merak ettiğini sor, kaynakları yan yana kıyasla.",
+              "description": "İlgilendiğiniz konulardan kişisel sesli haber bülteni.",
               "operatingSystem": "iOS, Android",
               "applicationCategory": "Haber",
               "inLanguage": [
@@ -252,7 +252,6 @@
     </a>
     <nav class="menu" aria-label="Ana menü">
       <a href="#uygulamalar">Uygulamalar</a>
-      <a href="#yaklasim">Yaklaşım</a>
       <a href="#iletisim">İletişim</a>
     </nav>
     <div class="araclar">
@@ -272,14 +271,12 @@
     <div class="kap kahraman-ic">
       <div class="kahraman-metin">
         <h1 class="baslik">
-        <span class="satir"><span style="--i:0"><em>Her gün</em></span></span>
-        <span class="satir"><span style="--i:1">kullanılan</span></span>
-        <span class="satir"><span style="--i:2">uygulamalar</span></span>
-        <span class="satir"><span style="--i:3">yapıyoruz.</span></span></h1>
-        <p class="giris">Yelkovan bir mobil uygulama stüdyosu. Sınava hazırlanan öğrenciler için Sorula'yı, çocuklara her gece yeni bir masal anlatan Faby'yi ve haberi dinlerken soru sorabildiğiniz Wonderwhy'ı tasarlıyor, geliştiriyor ve her sürümde biraz daha iyileştiriyoruz.</p>
+        <span class="satir"><span style="--i:0">Her türün</span></span>
+        <span class="satir"><span style="--i:1">en iyisi.</span></span></h1>
+        <p class="giris">Yelkovan bir mobil uygulama stüdyosu. Girdiğimiz her alanda en iyi uygulamayı yapmak için çalışıyoruz.</p>
         <div class="eylemler">
-          <a class="dugme dolu" href="#uygulamalar">Uygulamalarımız<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M5 11l5 5 5-5"/></svg></a>
-          <a class="dugme bos" href="#iletisim">Bize yazın</a>
+          <a class="dugme dolu" href="#uygulamalar">Uygulamalar<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M5 11l5 5 5-5"/></svg></a>
+          <a class="dugme bos" href="#iletisim">İletişim</a>
         </div>
       </div>
       <div class="vitrin" aria-label="Uygulamalarımız">
@@ -287,176 +284,105 @@
         <div class="vitrin-sahne">
         <a class="banner" href="#uyg-sorula" data-sira="0"><img src="assets/img/vitrin/sorula.webp" alt="Sorula · App Store görseli" width="600" height="1304" decoding="async"></a>
         <a class="banner" href="#uyg-faby" data-sira="1"><img src="assets/img/vitrin/faby-tr.webp" alt="Faby · App Store görseli" width="600" height="1304" loading="lazy" decoding="async"></a>
-        <a class="banner" href="#uyg-wonderwhy" data-sira="2"><img src="assets/img/vitrin/wonderwhy-tr.webp" alt="Wonderwhy · App Store görseli" width="600" height="1304" loading="lazy" decoding="async"></a>
-        <a class="banner" href="#uyg-astronova" data-sira="3"><img src="assets/img/vitrin/astronova.webp" alt="Astronova · App Store görseli" width="600" height="1304" loading="lazy" decoding="async"></a>
-        <a class="banner" href="#uyg-telveli" data-sira="4"><img src="assets/img/vitrin/telveli-tr.webp" alt="Telveli · Google Play görseli" width="600" height="1300" loading="lazy" decoding="async"></a>
+        <a class="banner" href="#uyg-wonderwhy" data-sira="2"><img src="assets/img/vitrin/wonderwhy-tr.webp?v=2" alt="Wonderwhy · App Store görseli" width="600" height="1304" loading="lazy" decoding="async"></a>
+        <a class="banner" href="#uyg-astronova" data-sira="3"><img src="assets/img/vitrin/astronova-tr.webp?v=2" alt="Astronova · App Store görseli" width="600" height="1304" loading="lazy" decoding="async"></a>
+        <a class="banner" href="#uyg-telveli" data-sira="4"><img src="assets/img/vitrin/telveli-tr.webp?v=4" alt="Telveli · Google Play görseli" width="600" height="1304" loading="lazy" decoding="async"></a>
         </div>
         <div class="vitrin-sekmeler" role="tablist"><button type="button" role="tab" data-hedef="0" aria-label="Sorula"><img src="assets/img/apps/sorula.webp" alt="" width="28" height="28"><b>Sorula</b><small>Sınava hazırlık</small><i></i></button><button type="button" role="tab" data-hedef="1" aria-label="Faby"><img src="assets/img/apps/faby.webp" alt="" width="28" height="28"><b>Faby</b><small>Çocuk masalları</small><i></i></button><button type="button" role="tab" data-hedef="2" aria-label="Wonderwhy"><img src="assets/img/apps/wonderwhy.webp" alt="" width="28" height="28"><b>Wonderwhy</b><small>Sesli haber</small><i></i></button><button type="button" role="tab" data-hedef="3" aria-label="Astronova"><img src="assets/img/apps/astronova.webp" alt="" width="28" height="28"><b>Astronova</b><small>Yan proje · Oyun</small><i></i></button><button type="button" role="tab" data-hedef="4" aria-label="Telveli"><img src="assets/img/apps/telveli.webp" alt="" width="28" height="28"><b>Telveli</b><small>Yan proje · Fal</small><i></i></button></div>
       </div>
     </div>
-    <div class="kap seridi">
-      <div class="serit">
-        <p>App Store ve Google Play'de</p>
-        <div class="ikonlar">
-        <a href="#uygulamalar" title="Sorula">
-        <img src="assets/img/apps/sorula.webp" width="44" height="44" alt="Sorula"></a>
-        <a href="#uygulamalar" title="Faby">
-        <img src="assets/img/apps/faby.webp" width="44" height="44" alt="Faby"></a>
-        <a href="#uygulamalar" title="Wonderwhy">
-        <img src="assets/img/apps/wonderwhy.webp" width="44" height="44" alt="Wonderwhy"></a></div>
-      </div>
-    </div>
   </section>
 
-  <section class="bolum" id="uygulamalar" aria-labelledby="uyg-baslik">
+  <section class="bolum uygulamalar" id="uygulamalar" aria-labelledby="uyg-baslik">
     <div class="kap">
-      <div class="bolum-bas" data-reveal>
-        <p class="bolum-etiket">Uygulamalar</p>
-        <h2 id="uyg-baslik">Üç uygulama, tek atölye.</h2>
-        <p class="bolum-alt">Her biri kendi adı ve kendi kitlesiyle yaşıyor. Ortak noktaları, aynı özenle yapılmış olmaları.</p>
-      </div>
+      <h2 class="gizli" id="uyg-baslik">Uygulamalar</h2>
+      <!-- her satır aynı ızgarada: ikon · ad ve açıklama · mağaza (App Store | Google Play) · web sitesi · yasal -->
+      <div class="tablo-bas" aria-hidden="true"><span>Uygulama</span><span>Mağaza</span><span>Web sitesi</span><span>Yasal</span></div>
       <ol class="liste">
         <!-- Sorula · uygulama satırı -->
         <li class="uyg" id="uyg-sorula" style="--renk:#F2C14E;--i:0" data-reveal>
-        <img class="uyg-ikon" src="assets/img/apps/sorula.webp" width="88" height="88" alt="Sorula ikonu" loading="lazy" decoding="async">
-        <div class="uyg-ana">
-        <div class="uyg-ad">
-        <h3>Sorula</h3><span class="etiket">Eğitim</span></div>
-        <p>TYT, AYT, LGS ve KPSS için soru bankası, deneme sınavları ve konu testleri. Türkiye'nin ulusal sınavlarına her gün biraz daha hazır.</p></div>
-        <div class="uyg-meta"><span><b>iOS · Android</b></span><span>Türkçe</span></div>
-        <div class="uyg-baglar">
-        <a class="magaza" href="https://apps.apple.com/app/id6740641580" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3Z"/>
-        </svg>App Store</a>
-        <a class="magaza" href="https://play.google.com/store/apps/details?id=com.ay.sorulaquiztest" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4.6 2.9c-.3.3-.4.7-.4 1.2v15.8c0 .5.1.9.4 1.2l8.9-9.1-8.9-9.1Zm9.9 10.1 2.6 2.7-10.3 5.9c-.4.2-.8.3-1.1.2l8.8-8.8Zm0-2-8.8-8.8c.3-.1.7 0 1.1.2l10.3 5.9-2.6 2.7Zm3.6-1.8 3 1.7c.8.5.8 1.7 0 2.2l-3 1.7-2.9-2.8 2.9-2.8Z"/>
-        </svg>Google Play</a>
-        <a class="magaza site" href="https://sorula.app" rel="noopener" target="_blank" aria-label="Sorula, Web sitesi">sorula.app<svg viewBox="0 0 20 20" aria-hidden="true">
-        <path d="M6 14 14 6M7 6h7v7"/>
-        </svg></a></div>
+          <img class="uyg-ikon" src="assets/img/apps/sorula.webp" width="52" height="52" alt="Sorula ikonu" loading="lazy" decoding="async">
+          <div class="uyg-ana">
+            <div class="uyg-ad"><h3>Sorula</h3><span class="uyg-bilgi">Eğitim · iOS, Android · <span>Türkçe</span></span></div>
+            <p>Öğrencileri TYT, AYT, LGS ve KPSS'ye hazırlayan uygulama.</p>
+          </div>
+          <div class="uyg-magaza">
+            <a class="magaza ios" href="https://apps.apple.com/app/id6740641580" rel="noopener" target="_blank" aria-label="Sorula, App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3Z"/></svg>App Store</a>
+            <a class="magaza play" href="https://play.google.com/store/apps/details?id=com.ay.sorulaquiztest" rel="noopener" target="_blank" aria-label="Sorula, Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 2.9c-.3.3-.4.7-.4 1.2v15.8c0 .5.1.9.4 1.2l8.9-9.1-8.9-9.1Zm9.9 10.1 2.6 2.7-10.3 5.9c-.4.2-.8.3-1.1.2l8.8-8.8Zm0-2-8.8-8.8c.3-.1.7 0 1.1.2l10.3 5.9-2.6 2.7Zm3.6-1.8 3 1.7c.8.5.8 1.7 0 2.2l-3 1.7-2.9-2.8 2.9-2.8Z"/></svg>Google Play</a>
+          </div>
+          <div class="uyg-site"><a href="https://sorula.app" rel="noopener" target="_blank" aria-label="Sorula, Web sitesi">sorula.app<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6M7 6h7v7"/></svg></a></div>
+          <div class="uyg-yasal"><a href="https://sorula.app/privacy/" rel="noopener" target="_blank" aria-label="Sorula, Gizlilik politikası">Gizlilik</a><a href="https://sorula.app/terms/" rel="noopener" target="_blank" aria-label="Sorula, Kullanım şartları">Şartlar</a></div>
         </li>
         <!-- Faby · uygulama satırı -->
         <li class="uyg" id="uyg-faby" style="--renk:#9B6BFF;--i:1" data-reveal>
-        <img class="uyg-ikon" src="assets/img/apps/faby.webp" width="88" height="88" alt="Faby ikonu" loading="lazy" decoding="async">
-        <div class="uyg-ana">
-        <div class="uyg-ad">
-        <h3>Faby</h3><span class="etiket">Çocuk ve aile</span></div>
-        <p>Kahramanı çocuğunuz olan, resimli ve kişiye özel uyku masalları. Adını, temasını ve vereceği değeri siz seçin; masal yaşına göre yazılsın.</p></div>
-        <div class="uyg-meta"><span><b>iOS · Android</b></span><span title="İngilizce, Türkçe, İspanyolca, Fransızca, Almanca, Portekizce, Arapça, Çince, Hintçe">9 dil</span></div>
-        <div class="uyg-baglar">
-        <a class="magaza" href="https://apps.apple.com/app/id6757192081" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3Z"/>
-        </svg>App Store</a>
-        <a class="magaza" href="https://play.google.com/store/apps/details?id=com.ay.masalai" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4.6 2.9c-.3.3-.4.7-.4 1.2v15.8c0 .5.1.9.4 1.2l8.9-9.1-8.9-9.1Zm9.9 10.1 2.6 2.7-10.3 5.9c-.4.2-.8.3-1.1.2l8.8-8.8Zm0-2-8.8-8.8c.3-.1.7 0 1.1.2l10.3 5.9-2.6 2.7Zm3.6-1.8 3 1.7c.8.5.8 1.7 0 2.2l-3 1.7-2.9-2.8 2.9-2.8Z"/>
-        </svg>Google Play</a>
-        <a class="magaza site" href="https://www.fabyfun.com" rel="noopener" target="_blank" aria-label="Faby, Web sitesi">fabyfun.com<svg viewBox="0 0 20 20" aria-hidden="true">
-        <path d="M6 14 14 6M7 6h7v7"/>
-        </svg></a></div>
+          <img class="uyg-ikon" src="assets/img/apps/faby.webp" width="52" height="52" alt="Faby ikonu" loading="lazy" decoding="async">
+          <div class="uyg-ana">
+            <div class="uyg-ad"><h3>Faby</h3><span class="uyg-bilgi">Çocuk ve aile · iOS, Android · <span title="İngilizce, Türkçe, İspanyolca, Fransızca, Almanca, Portekizce, Arapça, Çince, Hintçe">9 dil</span></span></div>
+            <p>Kahramanı çocuğunuz olan, kişiye özel uyku masalları.</p>
+          </div>
+          <div class="uyg-magaza">
+            <a class="magaza ios" href="https://apps.apple.com/app/id6757192081" rel="noopener" target="_blank" aria-label="Faby, App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3Z"/></svg>App Store</a>
+            <a class="magaza play" href="https://play.google.com/store/apps/details?id=com.ay.masalai" rel="noopener" target="_blank" aria-label="Faby, Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 2.9c-.3.3-.4.7-.4 1.2v15.8c0 .5.1.9.4 1.2l8.9-9.1-8.9-9.1Zm9.9 10.1 2.6 2.7-10.3 5.9c-.4.2-.8.3-1.1.2l8.8-8.8Zm0-2-8.8-8.8c.3-.1.7 0 1.1.2l10.3 5.9-2.6 2.7Zm3.6-1.8 3 1.7c.8.5.8 1.7 0 2.2l-3 1.7-2.9-2.8 2.9-2.8Z"/></svg>Google Play</a>
+          </div>
+          <div class="uyg-site"><a href="https://www.fabyfun.com" rel="noopener" target="_blank" aria-label="Faby, Web sitesi">fabyfun.com<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6M7 6h7v7"/></svg></a></div>
+          <div class="uyg-yasal"><a href="https://www.fabyfun.com/gizlilik.html" rel="noopener" target="_blank" aria-label="Faby, Gizlilik politikası">Gizlilik</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener" target="_blank" title="Apple standart EULA" aria-label="Faby, Apple standart EULA">Şartlar</a></div>
         </li>
         <!-- Wonderwhy · uygulama satırı -->
         <li class="uyg" id="uyg-wonderwhy" style="--renk:#2F80FF;--i:2" data-reveal>
-        <img class="uyg-ikon" src="assets/img/apps/wonderwhy.webp" width="88" height="88" alt="Wonderwhy ikonu" loading="lazy" decoding="async">
-        <div class="uyg-ana">
-        <div class="uyg-ad">
-        <h3>Wonderwhy</h3><span class="etiket">Haber</span><span class="etiket yeni">Yeni</span></div>
-        <p>Seçtiğin konulardan birkaç dakikalık sesli haber bülteni. Dinlerken merak ettiğini sor, kaynakları yan yana kıyasla.</p></div>
-        <div class="uyg-meta"><span><b>iOS · Android</b></span><span title="Türkçe, İngilizce, İspanyolca, Almanca">4 dil</span></div>
-        <div class="uyg-baglar">
-        <a class="magaza" href="https://apps.apple.com/app/id6817247112" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3Z"/>
-        </svg>App Store</a>
-        <a class="magaza" href="https://play.google.com/store/apps/details?id=com.ay.wonderwhy" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4.6 2.9c-.3.3-.4.7-.4 1.2v15.8c0 .5.1.9.4 1.2l8.9-9.1-8.9-9.1Zm9.9 10.1 2.6 2.7-10.3 5.9c-.4.2-.8.3-1.1.2l8.8-8.8Zm0-2-8.8-8.8c.3-.1.7 0 1.1.2l10.3 5.9-2.6 2.7Zm3.6-1.8 3 1.7c.8.5.8 1.7 0 2.2l-3 1.7-2.9-2.8 2.9-2.8Z"/>
-        </svg>Google Play</a>
-        <a class="magaza site" href="https://wonderwhy.net" rel="noopener" target="_blank" aria-label="Wonderwhy, Web sitesi">wonderwhy.net<svg viewBox="0 0 20 20" aria-hidden="true">
-        <path d="M6 14 14 6M7 6h7v7"/>
-        </svg></a></div>
+          <img class="uyg-ikon" src="assets/img/apps/wonderwhy.webp" width="52" height="52" alt="Wonderwhy ikonu" loading="lazy" decoding="async">
+          <div class="uyg-ana">
+            <div class="uyg-ad"><h3>Wonderwhy</h3><span class="uyg-bilgi">Haber · iOS, Android · <span title="Türkçe, İngilizce, İspanyolca, Almanca">4 dil</span></span></div>
+            <p>İlgilendiğiniz konulardan kişisel sesli haber bülteni.</p>
+          </div>
+          <div class="uyg-magaza">
+            <a class="magaza ios" href="https://apps.apple.com/app/id6817247112" rel="noopener" target="_blank" aria-label="Wonderwhy, App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3Z"/></svg>App Store</a>
+            <a class="magaza play" href="https://play.google.com/store/apps/details?id=com.ay.wonderwhy" rel="noopener" target="_blank" aria-label="Wonderwhy, Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 2.9c-.3.3-.4.7-.4 1.2v15.8c0 .5.1.9.4 1.2l8.9-9.1-8.9-9.1Zm9.9 10.1 2.6 2.7-10.3 5.9c-.4.2-.8.3-1.1.2l8.8-8.8Zm0-2-8.8-8.8c.3-.1.7 0 1.1.2l10.3 5.9-2.6 2.7Zm3.6-1.8 3 1.7c.8.5.8 1.7 0 2.2l-3 1.7-2.9-2.8 2.9-2.8Z"/></svg>Google Play</a>
+          </div>
+          <div class="uyg-site"><a href="https://wonderwhy.net" rel="noopener" target="_blank" aria-label="Wonderwhy, Web sitesi">wonderwhy.net<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6M7 6h7v7"/></svg></a></div>
+          <div class="uyg-yasal"><a href="https://wonderwhy.net/tr/gizlilik/" rel="noopener" target="_blank" aria-label="Wonderwhy, Gizlilik politikası">Gizlilik</a><a href="https://wonderwhy.net/tr/kullanim-sartlari/" rel="noopener" target="_blank" aria-label="Wonderwhy, Kullanım şartları">Şartlar</a></div>
         </li>
       </ol>
-      <div class="yan-projeler">
-        <div class="yan-bas" data-reveal><h3>Yan projeler</h3><p>Ana uygulamalarımızın yanında yaptığımız, yayında olan küçük projeler.</p></div>
-        <ol class="liste kucuk">
-          <!-- Astronova · uygulama satırı -->
-          <li class="uyg" id="uyg-astronova" style="--renk:#4FD1C5;--i:0" data-reveal>
-          <img class="uyg-ikon" src="assets/img/apps/astronova.webp" width="88" height="88" alt="Astronova ikonu" loading="lazy" decoding="async">
+      <p class="yan-etiket">Yan projeler</p>
+      <ol class="liste">
+        <!-- Astronova · uygulama satırı -->
+        <li class="uyg" id="uyg-astronova" style="--renk:#4FD1C5;--i:0" data-reveal>
+          <img class="uyg-ikon" src="assets/img/apps/astronova.webp" width="52" height="52" alt="Astronova ikonu" loading="lazy" decoding="async">
           <div class="uyg-ana">
-          <div class="uyg-ad">
-          <h3>Astronova</h3><span class="etiket">Oyun</span></div>
-          <p>Tek dokunuşla oynanan, sonsuz dikey bir uzay tırmanışı. Kanca at, hızlan, kaç ve yükselmeye devam et.</p></div>
-          <div class="uyg-meta"><span><b>iOS · Android</b></span><span title="İngilizce, Türkçe, İspanyolca, Fransızca, Arapça, Çince, Hintçe">7 dil</span></div>
-          <div class="uyg-baglar">
-          <a class="magaza" href="https://apps.apple.com/app/id6802215464" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3Z"/>
-          </svg>App Store</a>
-          <a class="magaza" href="https://play.google.com/store/apps/details?id=com.gkm.project_control" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M4.6 2.9c-.3.3-.4.7-.4 1.2v15.8c0 .5.1.9.4 1.2l8.9-9.1-8.9-9.1Zm9.9 10.1 2.6 2.7-10.3 5.9c-.4.2-.8.3-1.1.2l8.8-8.8Zm0-2-8.8-8.8c.3-.1.7 0 1.1.2l10.3 5.9-2.6 2.7Zm3.6-1.8 3 1.7c.8.5.8 1.7 0 2.2l-3 1.7-2.9-2.8 2.9-2.8Z"/>
-          </svg>Google Play</a></div>
-          </li>
-          <!-- Telveli · uygulama satırı -->
-          <li class="uyg" id="uyg-telveli" style="--renk:#E0B15A;--i:1" data-reveal>
-          <img class="uyg-ikon" src="assets/img/apps/telveli.webp" width="88" height="88" alt="Telveli ikonu" loading="lazy" decoding="async">
+            <div class="uyg-ad"><h3>Astronova</h3><span class="uyg-bilgi">Oyun · iOS, Android · <span title="İngilizce, Türkçe, İspanyolca, Fransızca, Arapça, Çince, Hintçe">7 dil</span></span></div>
+            <p>Tek dokunuşla oynanan sonsuz bir uzay oyunu.</p>
+          </div>
+          <div class="uyg-magaza">
+            <a class="magaza ios" href="https://apps.apple.com/app/id6802215464" rel="noopener" target="_blank" aria-label="Astronova, App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3Z"/></svg>App Store</a>
+            <a class="magaza play" href="https://play.google.com/store/apps/details?id=com.gkm.project_control" rel="noopener" target="_blank" aria-label="Astronova, Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 2.9c-.3.3-.4.7-.4 1.2v15.8c0 .5.1.9.4 1.2l8.9-9.1-8.9-9.1Zm9.9 10.1 2.6 2.7-10.3 5.9c-.4.2-.8.3-1.1.2l8.8-8.8Zm0-2-8.8-8.8c.3-.1.7 0 1.1.2l10.3 5.9-2.6 2.7Zm3.6-1.8 3 1.7c.8.5.8 1.7 0 2.2l-3 1.7-2.9-2.8 2.9-2.8Z"/></svg>Google Play</a>
+          </div>
+          <div class="uyg-site"><a href="astronova/">yelkovan.ai/astronova</a></div>
+          <div class="uyg-yasal"><a href="astronova/gizlilik/" aria-label="Astronova, Gizlilik eki">Gizlilik</a><a href="astronova/sartlar/" aria-label="Astronova, Şartlar eki">Şartlar</a></div>
+        </li>
+        <!-- Telveli · uygulama satırı -->
+        <li class="uyg" id="uyg-telveli" style="--renk:#E0B15A;--i:1" data-reveal>
+          <img class="uyg-ikon" src="assets/img/apps/telveli.webp" width="52" height="52" alt="Telveli ikonu" loading="lazy" decoding="async">
           <div class="uyg-ana">
-          <div class="uyg-ad">
-          <h3>Telveli</h3><span class="etiket">Yaşam tarzı</span></div>
-          <p>Tarot, iskambil ve aşk falları. Kartlarını seç, yorumunu birkaç saniyede oku.</p></div>
-          <div class="uyg-meta"><span><b>Android</b></span><span title="İngilizce, Türkçe, Arapça, Hintçe">4 dil</span></div>
-          <div class="uyg-baglar">
-          <a class="magaza" href="https://play.google.com/store/apps/details?id=com.ay.telveli" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M4.6 2.9c-.3.3-.4.7-.4 1.2v15.8c0 .5.1.9.4 1.2l8.9-9.1-8.9-9.1Zm9.9 10.1 2.6 2.7-10.3 5.9c-.4.2-.8.3-1.1.2l8.8-8.8Zm0-2-8.8-8.8c.3-.1.7 0 1.1.2l10.3 5.9-2.6 2.7Zm3.6-1.8 3 1.7c.8.5.8 1.7 0 2.2l-3 1.7-2.9-2.8 2.9-2.8Z"/>
-          </svg>Google Play</a></div>
-          </li>
-        </ol>
-      </div>
+            <div class="uyg-ad"><h3>Telveli</h3><span class="uyg-bilgi">Yaşam tarzı · Android · <span title="İngilizce, Türkçe, Arapça, Hintçe">4 dil</span></span></div>
+            <p>Tarot, iskambil ve Türk kahvesi falı.</p>
+          </div>
+          <div class="uyg-magaza">
+            <a class="magaza play" href="https://play.google.com/store/apps/details?id=com.ay.telveli" rel="noopener" target="_blank" aria-label="Telveli, Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 2.9c-.3.3-.4.7-.4 1.2v15.8c0 .5.1.9.4 1.2l8.9-9.1-8.9-9.1Zm9.9 10.1 2.6 2.7-10.3 5.9c-.4.2-.8.3-1.1.2l8.8-8.8Zm0-2-8.8-8.8c.3-.1.7 0 1.1.2l10.3 5.9-2.6 2.7Zm3.6-1.8 3 1.7c.8.5.8 1.7 0 2.2l-3 1.7-2.9-2.8 2.9-2.8Z"/></svg>Google Play</a>
+          </div>
+          <div class="uyg-site"><a href="telveli/">yelkovan.ai/telveli</a></div>
+          <div class="uyg-yasal"><a href="telveli/gizlilik/" aria-label="Telveli, Gizlilik eki">Gizlilik</a><a href="telveli/sartlar/" aria-label="Telveli, Şartlar eki">Şartlar</a></div>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <section class="bolum sayilar-bolum" aria-label="Rakamlarla Yelkovan">
-    <div class="kap sayilar">
-      <div class="sayi" data-reveal style="--i:0"><strong data-sayi="3">3</strong><span>uygulama</span></div>
-      <div class="sayi" data-reveal style="--i:1"><strong data-sayi="2">2</strong><span>yan proje</span></div>
-      <div class="sayi" data-reveal style="--i:2"><strong data-sayi="9">9</strong><span>dilde yayında</span></div>
-    </div>
-  </section>
 
-  <section class="bolum" id="yaklasim" aria-labelledby="yak-baslik">
-    <div class="kap">
-      <div class="bolum-bas" data-reveal>
-        <p class="bolum-etiket">Yaklaşım</p>
-        <h2 id="yak-baslik">Az ekran, çok özen.</h2>
-      </div>
-      <div class="ilkeler">
-        <article class="ilke" data-reveal style="--i:0"><svg viewBox="0 0 40 40" aria-hidden="true">
-        <path fill="currentColor" d="M4 8 L36 20 L14 30 Z"/>
-        <path fill="currentColor" fill-opacity=".45" d="M4 8 L14 30 L10 18 Z"/>
-        </svg>
-        <h3>Önce kullanıcının zamanı</h3>
-        <p>Açılır açılmaz işe yarayan ekranlar. Gereksiz adım, gereksiz bildirim, gereksiz bekleme yok.</p>
-        </article>
-        <article class="ilke" data-reveal style="--i:1"><svg viewBox="0 0 40 40" aria-hidden="true">
-        <path fill="currentColor" d="M6 30 L20 6 L34 30 Z"/>
-        <path fill="currentColor" fill-opacity=".45" d="M20 6 L34 30 L20 24 Z"/>
-        </svg>
-        <h3>Her dilde aynı özen</h3>
-        <p>Uygulamalarımız Türkçeden Arapçaya, Çinceden Hintçeye dokuz dilde yayında. Mağaza sayfasından arayüze kadar her dil aynı dikkatle.</p>
-        </article>
-        <article class="ilke" data-reveal style="--i:2"><svg viewBox="0 0 40 40" aria-hidden="true">
-        <path fill="currentColor" d="M8 34 L20 4 L26 22 Z"/>
-        <path fill="currentColor" fill-opacity=".45" d="M20 4 L34 16 L26 22 Z"/>
-        </svg>
-        <h3>Ölç, düzelt, yayınla</h3>
-        <p>Her sürümü gerçek kullanım verisine bakarak iyileştiriyoruz. Bir şeyi değiştirmeden önce neden değiştirdiğimizi biliyoruz.</p>
-        </article>
-      </div>
-    </div>
-  </section>
 
   <section class="bolum iletisim" id="iletisim" aria-labelledby="ilt-baslik">
     <div class="kap iletisim-ic" data-reveal>
       <p class="bolum-etiket">İletişim</p>
       <h2 id="ilt-baslik">Bir fikriniz mi var? Yazın.</h2>
       <a class="eposta" href="mailto:info@yelkovan.ai"><span>info@yelkovan.ai</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-      <p class="bolum-alt">İş birlikleri, basın ve uygulamalarımızla ilgili her şey için.</p>
+      <p class="bolum-alt">Aklınızdaki uygulamayı birlikte geliştirebiliriz. İş birlikleri, basın ve uygulamalarımızla ilgili her şey için de buradayız.</p>
     </div>
   </section>
 </main>
@@ -473,29 +399,29 @@
       <path d="M83.00 20.00 L96.50 33.00 L81.09 25.25 Z"/>
       <path class="t62" d="M81.09 25.25 L96.50 33.00 L79.18 30.50 Z"/>
       </svg><span>yelkovan</span></a>
-      <p>Her gün açılan uygulamalar yapan mobil uygulama stüdyosu.</p>
     </div>
     <div class="alt-sutun">
       <p class="alt-baslik">Uygulamalar</p>
-      <a href="https://sorula.app" rel="noopener" target="_blank">Sorula</a>
-      <a href="https://www.fabyfun.com" rel="noopener" target="_blank">Faby</a>
-      <a href="https://apps.apple.com/app/id6802215464" rel="noopener" target="_blank">Astronova</a>
-      <a href="https://play.google.com/store/apps/details?id=com.ay.telveli" rel="noopener" target="_blank">Telveli</a>
-      <a href="https://wonderwhy.net" rel="noopener" target="_blank">Wonderwhy</a>
+      <div class="alt-uygulamalar">
+        <a href="https://sorula.app" rel="noopener" target="_blank">Sorula</a>
+        <a href="https://www.fabyfun.com" rel="noopener" target="_blank">Faby</a>
+        <a href="https://wonderwhy.net" rel="noopener" target="_blank">Wonderwhy</a>
+        <a href="astronova/">Astronova</a>
+        <a href="telveli/">Telveli</a>
+      </div>
     </div>
     <div class="alt-sutun">
       <p class="alt-baslik">Yelkovan</p>
-      <a href="#yaklasim">Yaklaşım</a>
       <a href="#iletisim">İletişim</a>
       <a href="en/" hreflang="en" lang="en">English</a>
     </div>
   </div>
   <div class="kap"><div class="alt-son">
     <span>© 2026 Yelkovan. Tüm hakları saklıdır.</span>
-    <span><a href="legal/gizlilik/">Gizlilik</a> · <a href="legal/sartlar/">Şartlar</a> · Bu site çerez kullanmaz.</span>
+    <span><a href="legal/gizlilik/">Gizlilik</a> · <a href="legal/sartlar/">Şartlar</a> · <a href="legal/kvkk/">KVKK</a> · Bu site çerez kullanmaz.</span>
   </div></div>
 </footer>
 
-<script src="assets/site.js?v=1" defer></script>
+<script src="assets/site.js?v=3" defer></script>
 </body>
 </html>
