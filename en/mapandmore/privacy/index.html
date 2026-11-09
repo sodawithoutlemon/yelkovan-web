@@ -81,7 +81,7 @@
 <p>Map &amp; More is developed and published by Yelkovan (Yiğit Özdemir).</p>
 
 <h2 id="telefon">2. What is kept on your phone</h2>
-<p>Everything you enter in the app is stored on your phone: trips and day plans, packing lists, expenses and your travel companions' names, travel documents (type, note, booking code, expiry date), journal notes, your closet, ready-made bags and your settings (language, home city, units, notification preferences). Photos you add to your closet or journal are picked from your gallery, resized and stored in the app's folder. For the home screen widget and the live ticket on the lock screen, a summary of your next trip is written to a shared area on the phone. None of this is used for ads or analytics.</p>
+<p>Everything you enter in the app is stored on your phone: trips and day plans, packing lists, expenses and your travel companions' names, travel documents (type, note, booking code, expiry date), trip notes, your closet, ready-made bags and your settings (language, home city, units, notification preferences). Photos you add to your closet are picked from your gallery, resized and stored in the app's folder. For the home screen widget and the live ticket on the lock screen, a summary of your next trip is written to a shared area on the phone. None of this is used for ads or analytics.</p>
 
 <h2 id="hesap">3. Account</h2>
 <p>You need an account to see your plan. You sign up with Apple, Google or an email and password. Google Firebase Authentication creates a user ID (UID) and stores your email address, how you signed in, and when the account was created and last used.</p>
@@ -94,7 +94,7 @@
 
 <h2 id="yedek">4. Cloud backup</h2>
 <p>While you are signed in, all the data in section 2 (except sample trips) and your photos are backed up to a folder tied to your account in Google Firebase Storage. The backup is stored on Google's servers in Europe. Under the security rules, only you can read or write this folder through the app. Each backup replaces the previous one. The backup exists to bring your data back when you change phones or reinstall the app, and is not used for anything else.</p>
-<p>A photo taken with a camera may contain location information (EXIF) written by the phone. The app does not read or use it, but because the photo is stored as it is, it may also be included in the backup.</p>
+<p>A photo taken with a camera may contain location information (EXIF) written by the phone. The app removes it when you pick the photo and again before backing it up, so the backup holds no location information for your photos.</p>
 <p>Signing out does not delete the backup; deleting your account does (see 10).</p>
 
 <h2 id="plan">5. Day plans and stay suggestions</h2>
@@ -115,7 +115,7 @@
 
 <h2 id="izinler">8. Permissions and what is not used</h2>
 <ul>
-<li><strong>Photos:</strong> only the photos you pick to add to your closet or journal.</li>
+<li><strong>Photos:</strong> only the photos you pick to add to your closet.</li>
 <li><strong>Calendar:</strong> to add flights and stays to your calendar. On iPhone only write access is requested; we don't read the events in your calendar. On Android your calendar app opens and saving is up to you.</li>
 <li><strong>Notifications:</strong> trip reminders are scheduled locally on your phone. No push notification service is used.</li>
 <li>The app does not access your location (GPS), camera, microphone or contacts; it does not use the advertising ID; it contains no analytics, advertising or crash reporting software (SDK), and it does not track you across other apps.</li>
@@ -143,7 +143,7 @@
 <p>Map &amp; More is a travel app for a general audience and is not directed at children under 13. Because the app requires an account, children under 13 should not use it. General rules on children are in the <a href="../../../en/legal/privacy/#cocuklar">main policy</a>.</p>
 
 <h2 id="kvkk">12. Users in Türkiye (KVKK)</h2>
-<p>In addition to the categories in the <a href="../../../en/legal/kvkk/">KVKK Privacy Notice</a>, this app processes <strong>visual records</strong> (closet and journal photos) and <strong>customer transaction</strong> data (trip records, expenses, travel documents). Trip details sent for day plans are transferred to OpenAI (USA); this transfer falls under Article 9 of the KVKK.</p>
+<p>In addition to the categories in the <a href="../../../en/legal/kvkk/">KVKK Privacy Notice</a>, this app processes <strong>visual records</strong> (closet photos) and <strong>customer transaction</strong> data (trip records, expenses, travel documents). Trip details sent for day plans are transferred to OpenAI (USA); this transfer falls under Article 9 of the KVKK.</p>
 
 <h2 id="iletisim">13. Contact</h2>
 <p><a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a></p>

@@ -81,7 +81,7 @@
 <p>Map &amp; More'u Yelkovan (Yiğit Özdemir) geliştirir ve yayımlar.</p>
 
 <h2 id="telefon">2. Telefonunuzda tutulanlar</h2>
-<p>Uygulamaya girdiğiniz her şey telefonunuzda saklanır: geziler ve gün planları, valiz listeleri, harcamalar ve yol arkadaşlarınızın adları, seyahat belgeleri (tür, not, rezervasyon kodu, son geçerlilik tarihi), günlük notları, dolabınız, hazır valizler ve ayarlarınız (dil, ev şehri, birimler, bildirim tercihleri). Dolaba ya da günlüğe eklediğiniz fotoğraflar galeriden seçilir, küçültülür ve uygulamanın klasöründe saklanır. Ana ekran widget'ı ve kilit ekranındaki canlı bilet için sıradaki gezinin özeti telefonda paylaşılan bir alana yazılır. Bunların hiçbiri reklam ya da analitik için kullanılmaz.</p>
+<p>Uygulamaya girdiğiniz her şey telefonunuzda saklanır: geziler ve gün planları, valiz listeleri, harcamalar ve yol arkadaşlarınızın adları, seyahat belgeleri (tür, not, rezervasyon kodu, son geçerlilik tarihi), gezi notları, dolabınız, hazır valizler ve ayarlarınız (dil, ev şehri, birimler, bildirim tercihleri). Dolaba eklediğiniz fotoğraflar galeriden seçilir, küçültülür ve uygulamanın klasöründe saklanır. Ana ekran widget'ı ve kilit ekranındaki canlı bilet için sıradaki gezinin özeti telefonda paylaşılan bir alana yazılır. Bunların hiçbiri reklam ya da analitik için kullanılmaz.</p>
 
 <h2 id="hesap">3. Hesap</h2>
 <p>Planınızı görmek için üye olmanız gerekir. Apple, Google ya da e-posta ve şifreyle üye olursunuz. Google Firebase Authentication bir kullanıcı kimliği (UID) oluşturur; e-posta adresinizi, giriş yolunuzu ve hesabın oluşturulma ve son giriş zamanını saklar.</p>
@@ -94,7 +94,7 @@
 
 <h2 id="yedek">4. Bulut yedeği</h2>
 <p>Üyeyken 2. bölümdeki verilerin tamamı (örnek geziler hariç) ve fotoğraflarınız Google Firebase Storage'da hesabınıza bağlı bir klasöre yedeklenir. Yedek Google'ın Avrupa'daki sunucularında durur. Güvenlik kuralları gereği bu klasörü uygulama üzerinden yalnız siz okuyup yazabilirsiniz. Her yedek bir öncekinin üzerine yazılır. Yedeğin amacı, telefon değiştirdiğinizde ya da uygulamayı yeniden kurduğunuzda verilerinizi geri getirmektir; başka bir amaçla kullanılmaz.</p>
-<p>Kamerayla çekilmiş bir fotoğrafın içinde telefonun yazdığı konum bilgisi (EXIF) bulunabilir. Uygulama bu bilgiyi okumaz ve kullanmaz; ancak fotoğraf olduğu gibi saklandığı için yedekte de yer alabilir.</p>
+<p>Kamerayla çekilmiş bir fotoğrafın içinde telefonun yazdığı konum bilgisi (EXIF) bulunabilir. Uygulama bu bilgiyi fotoğrafı seçtiğinizde ve yedeğe göndermeden önce siler; yedekte fotoğrafın konum bilgisi bulunmaz.</p>
 <p>Çıkış yapmak yedeği silmez; hesabı silmek siler (bkz. 10).</p>
 
 <h2 id="plan">5. Gün planı ve konaklama önerisi</h2>
@@ -115,7 +115,7 @@
 
 <h2 id="izinler">8. İzinler ve kullanılmayanlar</h2>
 <ul>
-<li><strong>Fotoğraflar:</strong> yalnız dolaba ya da günlüğe eklemek için seçtiğiniz fotoğraflar.</li>
+<li><strong>Fotoğraflar:</strong> yalnız dolaba eklemek için seçtiğiniz fotoğraflar.</li>
 <li><strong>Takvim:</strong> uçuşları ve konaklamayı takviminize eklemek için. iPhone'da yalnız yazma izni istenir; takviminizdeki etkinlikleri okumayız. Android'de takvim uygulamanız açılır, kaydetmek size kalır.</li>
 <li><strong>Bildirimler:</strong> gezi hatırlatmaları telefonunuzda yerel olarak kurulur. Uzaktan bildirim (push) hizmeti kullanılmaz.</li>
 <li>Uygulama konuma (GPS), kameraya, mikrofona ya da rehbere erişmez; reklam kimliği kullanmaz; analitik, reklam ya da çökme raporlama yazılımı (SDK) içermez ve sizi başka uygulamalarda izlemez.</li>
@@ -143,7 +143,7 @@
 <p>Map &amp; More genel kitleye yönelik bir seyahat uygulamasıdır ve 13 yaşın altındaki çocuklara yönelik değildir. Uygulamayı kullanmak için üyelik gerektiğinden 13 yaşın altındaki çocuklar kullanmamalıdır. Çocuklarla ilgili genel kurallar <a href="../../legal/gizlilik/#cocuklar">ana politikada</a> yazar.</p>
 
 <h2 id="kvkk">12. Türkiye'deki kullanıcılar (KVKK)</h2>
-<p><a href="../../legal/kvkk/">KVKK Aydınlatma Metni</a>'ndeki kategorilere ek olarak bu uygulamada <strong>görsel kayıt</strong> (dolap ve günlük fotoğrafları) ve <strong>müşteri işlem</strong> verileri (gezi kayıtları, harcamalar, seyahat belgeleri) işlenir. Gün planı için gönderilen gezi bilgileri OpenAI'ye (ABD) aktarılır; bu aktarım KVKK m. 9 kapsamındadır.</p>
+<p><a href="../../legal/kvkk/">KVKK Aydınlatma Metni</a>'ndeki kategorilere ek olarak bu uygulamada <strong>görsel kayıt</strong> (dolap fotoğrafları) ve <strong>müşteri işlem</strong> verileri (gezi kayıtları, harcamalar, seyahat belgeleri) işlenir. Gün planı için gönderilen gezi bilgileri OpenAI'ye (ABD) aktarılır; bu aktarım KVKK m. 9 kapsamındadır.</p>
 
 <h2 id="iletisim">13. İletişim</h2>
 <p><a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a></p>
