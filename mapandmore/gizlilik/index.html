@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Map &amp; More gizlilik eki · Yelkovan</title>
-<meta name="description" content="Map &amp; More&#x27;un işlediği veriler: hesap, bulut yedeği, gün planı için gönderilenler (OpenAI, OpenStreetMap), harita ve silme.">
+<meta name="description" content="Map &amp; More&#x27;un işlediği veriler: hesap, bulut yedeği, gün planı için gönderilenler (OpenAI, OpenStreetMap), ücretsiz planda reklam (Google AdMob), Pro satın alma (RevenueCat), harita ve silme.">
 <link rel="canonical" href="https://yelkovan.ai/mapandmore/gizlilik/">
 <link rel="alternate" hreflang="tr" href="https://yelkovan.ai/mapandmore/gizlilik/">
 <link rel="alternate" hreflang="en" href="https://yelkovan.ai/en/mapandmore/privacy/">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Yelkovan">
 <meta property="og:title" content="Map &amp; More gizlilik eki · Yelkovan">
-<meta property="og:description" content="Map &amp; More&#x27;un işlediği veriler: hesap, bulut yedeği, gün planı için gönderilenler (OpenAI, OpenStreetMap), harita ve silme.">
+<meta property="og:description" content="Map &amp; More&#x27;un işlediği veriler: hesap, bulut yedeği, gün planı için gönderilenler (OpenAI, OpenStreetMap), ücretsiz planda reklam (Google AdMob), Pro satın alma (RevenueCat), harita ve silme.">
 <meta property="og:url" content="https://yelkovan.ai/mapandmore/gizlilik/">
 <meta property="og:image" content="https://yelkovan.ai/og-tr.png">
 <meta property="og:locale" content="tr_TR">
@@ -64,7 +64,7 @@
 <nav class="sekme-gez" aria-label="Map &amp; More"><a href="../../mapandmore/">Map &amp; More</a><a href="../../mapandmore/destek/">Destek</a><a href="../../mapandmore/gizlilik/" aria-current="page">Gizlilik</a><a href="../../mapandmore/sartlar/">Şartlar</a><a href="../../mapandmore/hesap-silme/">Hesap silme</a></nav>
 <article class="belge">
 <h1>Map &amp; More gizlilik eki</h1>
-<p class="tarih">Son güncelleme: 3 Kasım 2026</p>
+<p class="tarih">Son güncelleme: 13 Kasım 2026</p>
 <p class="ozet">Bu ek, <a href="../../legal/gizlilik/">Yelkovan Gizlilik Politikası</a>'nın parçasıdır ve Map &amp; More gezi planlayıcısına özgü bilgileri içerir. Veri sorumlusu, haklarınız ve başvuru yolu ana politikada yazar.</p>
 
 <div class="not">
@@ -72,7 +72,7 @@
 <ul>
 <li>Gezileriniz, valiziniz, dolabınız ve fotoğraflarınız önce telefonunuzda durur. Üye olunca hepsi hesabınıza yedeklenir; yedeğe yalnız siz erişirsiniz.</li>
 <li>Gün planı ve konaklama önerisi için şehir, tarihler, gün sayısı, ilgi alanlarınız, tempo ve dil sunucumuza gider; öneriyi OpenAI'nin modeli yazar. Bu isteklerle adınız, e-postanız ya da hesap kimliğiniz gönderilmez.</li>
-<li>Uygulamada reklam, analitik, çökme raporlama ve izleme yoktur. Konumunuza (GPS) erişmeyiz.</li>
+<li>Ücretsiz planda Google AdMob ile kişiselleştirilmemiş reklam gösterilir; Pro'da reklam yoktur. Pro'yu satın alırsanız ödemeyi Apple ya da Google alır, satın almanızı RevenueCat yönetir. Analitik ve çökme raporlama yazılımı kullanmayız, sizi başka uygulamalarda izlemeyiz ve konumunuza (GPS) erişmeyiz.</li>
 <li>Hesabınızı uygulamanın içinden ya da e-postayla silebilirsiniz; uygulamadan silme hemen yapılır.</li>
 </ul>
 </div>
@@ -95,7 +95,7 @@
 <h2 id="yedek">4. Bulut yedeği</h2>
 <p>Üyeyken 2. bölümdeki verilerin tamamı (örnek geziler hariç) ve fotoğraflarınız Google Firebase Storage'da hesabınıza bağlı bir klasöre yedeklenir. Yedek Google'ın Avrupa'daki sunucularında durur. Güvenlik kuralları gereği bu klasörü uygulama üzerinden yalnız siz okuyup yazabilirsiniz. Her yedek bir öncekinin üzerine yazılır. Yedeğin amacı, telefon değiştirdiğinizde ya da uygulamayı yeniden kurduğunuzda verilerinizi geri getirmektir; başka bir amaçla kullanılmaz.</p>
 <p>Kamerayla çekilmiş bir fotoğrafın içinde telefonun yazdığı konum bilgisi (EXIF) bulunabilir. Uygulama bu bilgiyi fotoğrafı seçtiğinizde ve yedeğe göndermeden önce siler; yedekte fotoğrafın konum bilgisi bulunmaz.</p>
-<p>Çıkış yapmak yedeği silmez; hesabı silmek siler (bkz. 10).</p>
+<p>Çıkış yapmak yedeği silmez; hesabı silmek siler (bkz. 12).</p>
 
 <h2 id="plan">5. Gün planı ve konaklama önerisi</h2>
 <p>Bir gezi için plan ya da konaklama önerisi istediğinizde uygulama sunucumuza (Google Cloud Functions, Avrupa) şunları gönderir: şehir, ülke ve şehir merkezinin koordinatı, gün sayısı ve tarihler, seçtiğiniz ilgi alanları, tempo ve uygulama dili. Çağrı hesabınızla yapılır ama hesap kimliğiniz yalnız günlük kullanım sınırını saymak için kullanılır; isteğin kendisi hesabınızla saklanmaz.</p>
@@ -118,10 +118,34 @@
 <li><strong>Fotoğraflar:</strong> yalnız dolaba eklemek için seçtiğiniz fotoğraflar.</li>
 <li><strong>Takvim:</strong> uçuşları ve konaklamayı takviminize eklemek için. iPhone'da yalnız yazma izni istenir; takviminizdeki etkinlikleri okumayız. Android'de takvim uygulamanız açılır, kaydetmek size kalır.</li>
 <li><strong>Bildirimler:</strong> gezi hatırlatmaları telefonunuzda yerel olarak kurulur. Uzaktan bildirim (push) hizmeti kullanılmaz.</li>
-<li>Uygulama konuma (GPS), kameraya, mikrofona ya da rehbere erişmez; reklam kimliği kullanmaz; analitik, reklam ya da çökme raporlama yazılımı (SDK) içermez ve sizi başka uygulamalarda izlemez.</li>
+<li><strong>Satın alma (Android):</strong> Pro'yu Google Play'den satın alabilmek için Google Play faturalandırma izni.</li>
+<li><strong>Reklam kimliği (Android):</strong> ücretsiz planda Google AdMob'un kullanması için (bkz. 9).</li>
+<li>Uygulama konuma (GPS), kameraya, mikrofona ya da rehbere erişmez. Analitik ya da çökme raporlama yazılımı (SDK) içermez. iPhone'da izleme izni (App Tracking Transparency) istemez ve sizi başka şirketlerin uygulama ve sitelerinde izlemez.</li>
 </ul>
 
-<h2 id="saglayicilar">9. Hizmet sağlayıcılar</h2>
+<h2 id="reklam">9. Reklam (Google AdMob)</h2>
+<p>Ücretsiz planda Gezilerim'de "Reklam" etiketli bir banner ve gezi oluşturduktan sonra ara sıra tam ekran reklam gösterilir. Pro'da reklam yoktur; reklam yazılımı hiç başlatılmaz ve rıza sorulmaz.</p>
+<p>Reklamları Google AdMob sunar. Reklamlar kişiselleştirilmemiştir: ilgi alanlarınıza ya da başka uygulama ve sitelerdeki davranışınıza göre seçilmez. Uygulama Google'a adınızı, e-postanızı, hesap kimliğinizi, gezilerinizi ya da ev şehrinizi göndermez. Reklamı göstermek, ölçmek ve sahteciliği önlemek için AdMob'un yazılımı şunları kendisi işler: cihaz modeli, işletim sistemi, uygulama bilgisi, IP adresi ve ondan çıkarılan yaklaşık konum, gösterilen reklamlar ve reklamla etkileşimler (görüntüleme, dokunma), yazılımın performans ve hata kayıtları, cihaz tanımlayıcıları.</p>
+<ul>
+<li><strong>Android:</strong> AdMob cihazın reklam kimliğini kullanabilir. Telefonunuzun ayarlarında (Gizlilik → Reklamlar) sıfırlayabilir ya da silebilirsiniz.</li>
+<li><strong>iPhone ve iPad:</strong> uygulama izleme izni istemez (App Tracking Transparency penceresi yoktur), bu yüzden cihazın reklam kimliğine (IDFA) erişilmez. AdMob, uygulamaya özgü satıcı kimliğini (IDFV) kullanabilir. Reklam ölçümü Apple'ın toplu rapor üreten SKAdNetwork'üyle yapılır.</li>
+<li><strong>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre:</strong> reklam yüklenmeden önce Google'ın rıza formu açılır. Seçiminiz telefonunuzda saklanır ve reklam isteklerinde Google'a iletilir. Rıza vermezseniz Google yalnız sınırlı reklam gösterebilir. Seçiminizi Profil → Reklam gizlilik seçenekleri'nden istediğiniz zaman değiştirebilirsiniz.</li>
+</ul>
+<p>Google bu verileri reklam için kendi adına ve kendi gizlilik politikasına göre işler: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Google'ın, hizmetlerini kullanan site ve uygulamalardan gelen bilgileri nasıl kullandığı</a>.</p>
+
+<h2 id="satin-alma">10. Pro ve satın alma (RevenueCat)</h2>
+<p>Pro'yu yıllık abonelik ya da tek seferlik ömür boyu satın alma olarak alabilirsiniz (koşullar: <a href="../../mapandmore/sartlar/#abonelik">şartlar eki</a>). Ödemeyi App Store'da Apple, Google Play'de Google alır; kart ve fatura bilgileriniz bize ya da RevenueCat'e gelmez.</p>
+<p>Satın almaları ve Pro durumunuzu bizim adımıza RevenueCat, Inc. (ABD) yönetir.</p>
+<ul>
+<li>Uygulama açıldığında Pro durumunuzu sormak için RevenueCat'e hesap kimliğiniz (Firebase UID) gider; böylece Pro, aynı hesapla giriş yaptığınız telefonlarda da açılır.</li>
+<li>Satın alırsanız RevenueCat'e satın aldığınız ürün, satın alma, yenileme ve bitiş tarihleri, deneme ve indirim durumu ve mağaza işlem bilgileri (makbuz ya da satın alma jetonu, fiyat, para birimi, mağaza ülkesi) ulaşır. Apple ve Google yenileme, iptal ve iadeleri RevenueCat'e bildirir.</li>
+<li>Her istekte uygulama sürümü, işletim sistemi, dil ve bölge gibi teknik bilgiler ve IP adresiniz de RevenueCat'e ulaşır.</li>
+<li>RevenueCat'e adınızı ya da e-postanızı göndermeyiz; reklam kimliği gibi cihaz tanımlayıcılarını toplamasını kapattık.</li>
+<li>Satın alma bilgileri Pro'yu açmak, satın almanın gerçek olduğunu doğrulamak ve satışların toplam sayılarını görmek için kullanılır; reklam için kullanılmaz.</li>
+<li>Hoş geldin indiriminin süresini saymak için Pro panelini ilk açtığınız an ayarlarınızda saklanır ve yedeğinize girer.</li>
+</ul>
+
+<h2 id="saglayicilar">11. Hizmet sağlayıcılar</h2>
 <table class="tablo">
 <thead><tr><th>Sağlayıcı</th><th>Ne için</th><th>Ne zaman</th></tr></thead>
 <tbody>
@@ -132,20 +156,25 @@
 <tr><td>OpenStreetMap Vakfı (Nominatim)</td><td data-b="Ne için">Yerlerin doğrulanması, otel ve ev şehri araması</td><td data-b="Ne zaman">Plan, öneri ve aramalarda (sunucumuzdan)</td></tr>
 <tr><td>OpenFreeMap</td><td data-b="Ne için">Harita</td><td data-b="Ne zaman">Harita açıkken</td></tr>
 <tr><td>Wikimedia Commons</td><td data-b="Ne için">Yer fotoğrafları</td><td data-b="Ne zaman">Planda fotoğraf görünürken</td></tr>
+<tr><td>Google AdMob</td><td data-b="Ne için">Ücretsiz planda reklam ve rıza formu</td><td data-b="Ne zaman">Ücretsiz plandayken</td></tr>
+<tr><td>RevenueCat (ABD)</td><td data-b="Ne için">Pro satın alma ve Pro durumu</td><td data-b="Ne zaman">Uygulama açıldığında ve satın aldığınızda</td></tr>
+<tr><td>Apple App Store · Google Play</td><td data-b="Ne için">Pro'nun ödemesi, yenilenmesi, iptali ve iadesi</td><td data-b="Ne zaman">Satın aldığınızda</td></tr>
 </tbody>
 </table>
-<p>Gizlilik politikaları: <a href="https://policies.google.com/privacy" rel="noopener">Google</a> · <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> · <a href="https://openai.com/policies/privacy-policy" rel="noopener">OpenAI</a> · <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">OpenStreetMap Vakfı</a> · <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">Wikimedia</a></p>
+<p>Gizlilik politikaları: <a href="https://policies.google.com/privacy" rel="noopener">Google</a> · <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> · <a href="https://openai.com/policies/privacy-policy" rel="noopener">OpenAI</a> · <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">OpenStreetMap Vakfı</a> · <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">Wikimedia</a> · <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a></p>
 
-<h2 id="saklama">10. Saklama ve silme</h2>
+<h2 id="saklama">12. Saklama ve silme</h2>
 <p>Hesabınıza bağlı veriler (giriş hesabı, bulut yedeği, fotoğraflar, sayaçlar) hesabınızı silene kadar tutulur. Hesabı uygulamadan sildiğinizde hepsi hemen silinir; telefondaki veriler de temizlenir. Silme yolu ve neyin silindiği: <a href="../../mapandmore/hesap-silme/">Map &amp; More hesap ve veri silme</a>. Üye olmadan yalnız telefonda tuttuğunuz veriler uygulamayı kaldırdığınızda silinir.</p>
+<p>RevenueCat'teki hesap kimliğiniz ve satın alma kaydınız hesabı silmekle kendiliğinden silinmez; silinmesini isterseniz info@yelkovan.ai'ye yazın, RevenueCat'ten sileriz. Apple ve Google satın alma kayıtlarını kendi kurallarına göre tutar. Google AdMob'un işlediği veriler hesabınıza bağlı değildir ve Google'ın saklama kurallarına tabidir.</p>
+<p>Hesabı silmek aboneliği iptal etmez; aboneliği App Store ya da Google Play'den iptal edin (<a href="../../mapandmore/sartlar/#abonelik">şartlar eki</a>).</p>
 
-<h2 id="cocuklar">11. Çocuklar</h2>
+<h2 id="cocuklar">13. Çocuklar</h2>
 <p>Map &amp; More genel kitleye yönelik bir seyahat uygulamasıdır ve 13 yaşın altındaki çocuklara yönelik değildir. Uygulamayı kullanmak için üyelik gerektiğinden 13 yaşın altındaki çocuklar kullanmamalıdır. Çocuklarla ilgili genel kurallar <a href="../../legal/gizlilik/#cocuklar">ana politikada</a> yazar.</p>
 
-<h2 id="kvkk">12. Türkiye'deki kullanıcılar (KVKK)</h2>
-<p><a href="../../legal/kvkk/">KVKK Aydınlatma Metni</a>'ndeki kategorilere ek olarak bu uygulamada <strong>görsel kayıt</strong> (dolap fotoğrafları) ve <strong>müşteri işlem</strong> verileri (gezi kayıtları, harcamalar, seyahat belgeleri) işlenir. Gün planı için gönderilen gezi bilgileri OpenAI'ye (ABD) aktarılır; bu aktarım KVKK m. 9 kapsamındadır.</p>
+<h2 id="kvkk">14. Türkiye'deki kullanıcılar (KVKK)</h2>
+<p><a href="../../legal/kvkk/">KVKK Aydınlatma Metni</a>'ndeki kategorilere ek olarak bu uygulamada <strong>görsel kayıt</strong> (dolap fotoğrafları) ve <strong>müşteri işlem</strong> verileri (gezi kayıtları, harcamalar, seyahat belgeleri, Pro satın alma bilgileri) işlenir. Ücretsiz planda reklam için cihaz ve reklam verileri Google AdMob tarafından işlenir. Gün planı için gönderilen gezi bilgileri OpenAI'ye (ABD), Pro satın alma bilgileri RevenueCat'e (ABD), reklam verileri Google'a aktarılır; bu aktarımlar KVKK m. 9 kapsamındadır.</p>
 
-<h2 id="iletisim">13. İletişim</h2>
+<h2 id="iletisim">15. İletişim</h2>
 <p><a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a></p>
 </article>
   </div>

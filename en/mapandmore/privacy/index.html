@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Map &amp; More privacy addendum · Yelkovan</title>
-<meta name="description" content="What Map &amp; More processes: account, cloud backup, what is sent for day plans (OpenAI, OpenStreetMap), maps and deletion.">
+<meta name="description" content="What Map &amp; More processes: account, cloud backup, what is sent for day plans (OpenAI, OpenStreetMap), ads on the free plan (Google AdMob), Pro purchases (RevenueCat), maps and deletion.">
 <link rel="canonical" href="https://yelkovan.ai/en/mapandmore/privacy/">
 <link rel="alternate" hreflang="tr" href="https://yelkovan.ai/mapandmore/gizlilik/">
 <link rel="alternate" hreflang="en" href="https://yelkovan.ai/en/mapandmore/privacy/">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Yelkovan">
 <meta property="og:title" content="Map &amp; More privacy addendum · Yelkovan">
-<meta property="og:description" content="What Map &amp; More processes: account, cloud backup, what is sent for day plans (OpenAI, OpenStreetMap), maps and deletion.">
+<meta property="og:description" content="What Map &amp; More processes: account, cloud backup, what is sent for day plans (OpenAI, OpenStreetMap), ads on the free plan (Google AdMob), Pro purchases (RevenueCat), maps and deletion.">
 <meta property="og:url" content="https://yelkovan.ai/en/mapandmore/privacy/">
 <meta property="og:image" content="https://yelkovan.ai/og-en.png">
 <meta property="og:locale" content="en_US">
@@ -64,7 +64,7 @@
 <nav class="sekme-gez" aria-label="Map &amp; More"><a href="../../../en/mapandmore/">Map &amp; More</a><a href="../../../en/mapandmore/support/">Support</a><a href="../../../en/mapandmore/privacy/" aria-current="page">Privacy</a><a href="../../../en/mapandmore/terms/">Terms</a><a href="../../../en/mapandmore/delete-account/">Delete account</a></nav>
 <article class="belge">
 <h1>Map &amp; More privacy addendum</h1>
-<p class="tarih">Last updated: 3 November 2026</p>
+<p class="tarih">Last updated: 13 November 2026</p>
 <p class="ozet">This addendum is part of the <a href="../../../en/legal/privacy/">Yelkovan Privacy Policy</a> and covers what is specific to the Map &amp; More trip planner. The data controller, your rights and how to make a request are in the main policy.</p>
 
 <div class="not">
@@ -72,7 +72,7 @@
 <ul>
 <li>Your trips, bags, closet and photos are stored on your phone first. Once you sign up, they are all backed up to your account, and only you can access the backup.</li>
 <li>For day plans and stay suggestions, the city, dates, number of days, your interests, pace and language go to our server; OpenAI's model writes the suggestions. Your name, email and account ID are not sent with these requests.</li>
-<li>The app has no ads, analytics, crash reporting or tracking. We don't access your location (GPS).</li>
+<li>On the free plan the app shows non-personalised ads through Google AdMob; Pro has no ads. If you buy Pro, Apple or Google takes the payment and RevenueCat manages the purchase. We use no analytics or crash reporting software, we don't track you across other apps and we don't access your location (GPS).</li>
 <li>You can delete your account in the app or by email; deleting in the app happens immediately.</li>
 </ul>
 </div>
@@ -95,7 +95,7 @@
 <h2 id="yedek">4. Cloud backup</h2>
 <p>While you are signed in, all the data in section 2 (except sample trips) and your photos are backed up to a folder tied to your account in Google Firebase Storage. The backup is stored on Google's servers in Europe. Under the security rules, only you can read or write this folder through the app. Each backup replaces the previous one. The backup exists to bring your data back when you change phones or reinstall the app, and is not used for anything else.</p>
 <p>A photo taken with a camera may contain location information (EXIF) written by the phone. The app removes it when you pick the photo and again before backing it up, so the backup holds no location information for your photos.</p>
-<p>Signing out does not delete the backup; deleting your account does (see 10).</p>
+<p>Signing out does not delete the backup; deleting your account does (see 12).</p>
 
 <h2 id="plan">5. Day plans and stay suggestions</h2>
 <p>When you ask for a plan or stay suggestions for a trip, the app sends our server (Google Cloud Functions, Europe): the city, country and the coordinates of the city centre, the number of days and the dates, the interests you picked, the pace and the app language. The request is made with your account, but your account ID is only used to count the daily usage limit; the request itself is not stored with your account.</p>
@@ -118,10 +118,34 @@
 <li><strong>Photos:</strong> only the photos you pick to add to your closet.</li>
 <li><strong>Calendar:</strong> to add flights and stays to your calendar. On iPhone only write access is requested; we don't read the events in your calendar. On Android your calendar app opens and saving is up to you.</li>
 <li><strong>Notifications:</strong> trip reminders are scheduled locally on your phone. No push notification service is used.</li>
-<li>The app does not access your location (GPS), camera, microphone or contacts; it does not use the advertising ID; it contains no analytics, advertising or crash reporting software (SDK), and it does not track you across other apps.</li>
+<li><strong>Purchases (Android):</strong> the Google Play billing permission, so you can buy Pro through Google Play.</li>
+<li><strong>Advertising ID (Android):</strong> for Google AdMob on the free plan (see 9).</li>
+<li>The app does not access your location (GPS), camera, microphone or contacts. It contains no analytics or crash reporting software (SDK). On iPhone it does not ask for permission to track you (App Tracking Transparency), and it does not track you across other companies' apps and websites.</li>
 </ul>
 
-<h2 id="saglayicilar">9. Service providers</h2>
+<h2 id="reklam">9. Ads (Google AdMob)</h2>
+<p>On the free plan the app shows a banner marked "Ad" in My trips and an occasional full-screen ad after you create a trip. Pro has no ads: the ad software is never started and you are not asked for consent.</p>
+<p>Ads are served by Google AdMob. They are non-personalised: they are not chosen based on your interests or on what you do in other apps and websites. The app does not send Google your name, email, account ID, trips or home city. To show and measure ads and to prevent fraud, AdMob's software itself processes: device model, operating system, app information, IP address and the approximate location derived from it, the ads shown and your interactions with them (views, taps), the software's performance and error logs, and device identifiers.</p>
+<ul>
+<li><strong>Android:</strong> AdMob may use the device's advertising ID. You can reset or delete it in your phone's settings under Privacy → Ads.</li>
+<li><strong>iPhone and iPad:</strong> the app does not ask for permission to track you (there is no App Tracking Transparency prompt), so the device's advertising identifier (IDFA) is not accessed. AdMob may use the app-specific identifier for vendors (IDFV). Ad measurement uses Apple's SKAdNetwork, which produces aggregated reports.</li>
+<li><strong>European Economic Area, United Kingdom and Switzerland:</strong> Google's consent form opens before any ad is loaded. Your choice is stored on your phone and passed to Google with ad requests. If you don't consent, Google may show only limited ads. You can change your choice at any time in Profile → Ad privacy options.</li>
+</ul>
+<p>Google processes this data for advertising on its own behalf and under its own privacy policy: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a>.</p>
+
+<h2 id="satin-alma">10. Pro and purchases (RevenueCat)</h2>
+<p>You can get Pro as a yearly subscription or as a one-time lifetime purchase (conditions: <a href="../../../en/mapandmore/terms/#abonelik">terms addendum</a>). Apple takes the payment on the App Store and Google on Google Play; your card and billing details are never passed to us or to RevenueCat.</p>
+<p>RevenueCat, Inc. (USA) manages purchases and your Pro status on our behalf.</p>
+<ul>
+<li>When the app opens, your account ID (Firebase UID) goes to RevenueCat to check your Pro status, so Pro also works on other phones where you sign in with the same account.</li>
+<li>If you buy, RevenueCat also receives the product you bought, the purchase, renewal and expiry dates, trial and discount status, and the store transaction details (receipt or purchase token, price, currency, store country). Apple and Google notify RevenueCat of renewals, cancellations and refunds.</li>
+<li>With every request, technical details such as app version, operating system, language and region, and your IP address also reach RevenueCat.</li>
+<li>We don't send RevenueCat your name or email, and we have turned off its collection of device identifiers such as the advertising ID.</li>
+<li>Purchase data is used to turn Pro on, to verify that a purchase is genuine and to see total sales figures; it is not used for advertising.</li>
+<li>To count down the welcome offer, the moment you first open the Pro panel is stored in your settings and included in your backup.</li>
+</ul>
+
+<h2 id="saglayicilar">11. Service providers</h2>
 <table class="tablo">
 <thead><tr><th>Provider</th><th>What for</th><th>When</th></tr></thead>
 <tbody>
@@ -132,20 +156,25 @@
 <tr><td>OpenStreetMap Foundation (Nominatim)</td><td data-b="What for">Checking places, hotel and home city search</td><td data-b="When">For plans, suggestions and searches (from our server)</td></tr>
 <tr><td>OpenFreeMap</td><td data-b="What for">Maps</td><td data-b="When">While a map is open</td></tr>
 <tr><td>Wikimedia Commons</td><td data-b="What for">Place photos</td><td data-b="When">When a photo is shown in your plan</td></tr>
+<tr><td>Google AdMob</td><td data-b="What for">Ads and the consent form on the free plan</td><td data-b="When">While you are on the free plan</td></tr>
+<tr><td>RevenueCat (USA)</td><td data-b="What for">Pro purchases and Pro status</td><td data-b="When">When the app opens and when you buy</td></tr>
+<tr><td>Apple App Store · Google Play</td><td data-b="What for">Payment, renewal, cancellation and refunds for Pro</td><td data-b="When">When you buy</td></tr>
 </tbody>
 </table>
-<p>Privacy policies: <a href="https://policies.google.com/privacy" rel="noopener">Google</a> · <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> · <a href="https://openai.com/policies/privacy-policy" rel="noopener">OpenAI</a> · <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">OpenStreetMap Foundation</a> · <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">Wikimedia</a></p>
+<p>Privacy policies: <a href="https://policies.google.com/privacy" rel="noopener">Google</a> · <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> · <a href="https://openai.com/policies/privacy-policy" rel="noopener">OpenAI</a> · <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">OpenStreetMap Foundation</a> · <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">Wikimedia</a> · <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a></p>
 
-<h2 id="saklama">10. Retention and deletion</h2>
+<h2 id="saklama">12. Retention and deletion</h2>
 <p>Data linked to your account (sign-in account, cloud backup, photos, counters) is kept until you delete your account. When you delete the account in the app, all of it is deleted immediately and the data on your phone is cleared too. How to delete and what is deleted: <a href="../../../en/mapandmore/delete-account/">Map &amp; More account and data deletion</a>. Data kept only on your phone without an account is deleted when you uninstall the app.</p>
+<p>Your account ID and purchase record at RevenueCat are not deleted automatically when you delete your account; write to info@yelkovan.ai and we will delete them from RevenueCat. Apple and Google keep purchase records under their own rules. Data processed by Google AdMob is not linked to your account and is subject to Google's retention rules.</p>
+<p>Deleting your account does not cancel a subscription; cancel it in the App Store or Google Play (<a href="../../../en/mapandmore/terms/#abonelik">terms addendum</a>).</p>
 
-<h2 id="cocuklar">11. Children</h2>
+<h2 id="cocuklar">13. Children</h2>
 <p>Map &amp; More is a travel app for a general audience and is not directed at children under 13. Because the app requires an account, children under 13 should not use it. General rules on children are in the <a href="../../../en/legal/privacy/#cocuklar">main policy</a>.</p>
 
-<h2 id="kvkk">12. Users in Türkiye (KVKK)</h2>
-<p>In addition to the categories in the <a href="../../../en/legal/kvkk/">KVKK Privacy Notice</a>, this app processes <strong>visual records</strong> (closet photos) and <strong>customer transaction</strong> data (trip records, expenses, travel documents). Trip details sent for day plans are transferred to OpenAI (USA); this transfer falls under Article 9 of the KVKK.</p>
+<h2 id="kvkk">14. Users in Türkiye (KVKK)</h2>
+<p>In addition to the categories in the <a href="../../../en/legal/kvkk/">KVKK Privacy Notice</a>, this app processes <strong>visual records</strong> (closet photos) and <strong>customer transaction</strong> data (trip records, expenses, travel documents, Pro purchase details). On the free plan, device and ad data are processed by Google AdMob for advertising. Trip details sent for day plans are transferred to OpenAI (USA), Pro purchase details to RevenueCat (USA) and ad data to Google; these transfers fall under Article 9 of the KVKK.</p>
 
-<h2 id="iletisim">13. Contact</h2>
+<h2 id="iletisim">15. Contact</h2>
 <p><a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a></p>
 </article>
   </div>
