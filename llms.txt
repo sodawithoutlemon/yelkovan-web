@@ -1,0 +1,39 @@
+# Yelkovan
+
+> Yelkovan is a mobile app studio that designs and builds its own apps for iOS and Android. This static site (Turkish at the root, English under /en/) lists the apps and holds their support, privacy and terms pages. It uses no cookies and no analytics.
+
+Subsi is the app this file points to first: a subscription tracker and daily-budget app for iPhone, iPad and Android. It never connects to a bank, needs no account, makes no network requests and collects no data. It does not cancel subscriptions for you; it shows what renews and when, and asks before a renewal. It is a one-time purchase. Prices are on the store pages and are not repeated here.
+
+## Subsi
+
+- [Subsi: subscription tracker app](https://yelkovan.ai/en/subsi/): what the app does, how it works without a bank connection, FAQ
+- [Abonelik takip uygulaması: Subsi](https://yelkovan.ai/subsi/): Turkish version of the page above
+- [Budget app without bank linking](https://yelkovan.ai/en/subsi/budget-app-without-bank-linking/): what you give up and keep without a bank feed, and how Subsi adds entries
+- [iPhone'da aboneliklerini nasıl görürsün](https://yelkovan.ai/subsi/iphone-abonelikleri-gor/): where to see subscriptions on an iPhone, what the list misses, where to cancel (Turkish)
+- [Maaştan günlük limit nasıl hesaplanır](https://yelkovan.ai/subsi/maastan-gunluk-limit/): daily spending limit until payday, formula and worked example (Turkish)
+- [Subsi support](https://yelkovan.ai/en/subsi/support/): how-to answers and contact
+- [Subsi privacy addendum](https://yelkovan.ai/en/subsi/privacy/): what data the app handles (none leaves the phone)
+- [Subsi on the App Store](https://apps.apple.com/app/id6831991844)
+- [Subsi on Google Play](https://play.google.com/store/apps/details?id=com.ay.subsi)
+
+## Other apps
+
+- [Sorula](https://sorula.app): exam preparation for students in Turkey (Turkish)
+- [Faby](https://www.fabyfun.com): personal bedtime stories with your child as the hero
+- [Wonderwhy](https://wonderwhy.net): a personal audio news briefing on the topics you pick
+- [Map & More](https://yelkovan.ai/en/mapandmore/): day-by-day trip plans, maps and packing lists
+- [Astronova](https://yelkovan.ai/en/astronova/): an endless space game played with one tap
+- [Telveli](https://yelkovan.ai/en/telveli/): tarot, playing-card and Turkish coffee readings (Android)
+- [Karnet](https://yelkovan.ai/en/karnet/): a city-walking game with a stamp passport, in Istanbul, Izmir and Ankara
+
+## Company and legal
+
+- [Yelkovan home (English)](https://yelkovan.ai/en/)
+- [Yelkovan ana sayfa (Türkçe)](https://yelkovan.ai/)
+- [Privacy policy](https://yelkovan.ai/en/legal/privacy/)
+- [Terms](https://yelkovan.ai/en/legal/terms/)
+- [Sitemap](https://yelkovan.ai/sitemap.xml)
+
+## Optional
+
+- Contact: info@yelkovan.ai

@@ -74,7 +74,7 @@
 .kunye .etiket + .etiket::before { content: "·"; padding-inline: 8px; }
 .urun-ozellik { margin-top: clamp(64px, 9vw, 120px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 36px; }
 .urun-ozellik .ilke { padding-top: 22px; border-top: 1px solid var(--cizgi); }
-.belge .urun-ozellik h3 { margin-top: 0; font-size: 18px; }
+.belge .urun-ozellik :is(h2, h3) { margin-top: 0; padding-top: 0; border-top: 0; font-size: 18px; line-height: 1.3; letter-spacing: -0.015em; }
 .belge .urun-ozellik .ilke p { margin-top: 8px; font-size: 15px; line-height: 1.55; }
 .urun-son { margin-top: clamp(56px, 8vw, 96px); max-width: 760px; }
 
@@ -82,4 +82,17 @@
   .urun { grid-template-columns: 1fr; }
   .urun-gorsel { justify-self: start; width: min(78%, 300px); }
   .urun-ozellik { grid-template-columns: 1fr; }
+}
+
+/* Subsi: mağaza düğmeleri her yerde, galeri ve tek ekran görüntüsü */
+.belge .uyg-baglar { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.belge .not > p + .uyg-baglar { margin-top: 16px; }
+.urun-galeri { margin-top: clamp(56px, 8vw, 96px); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.urun-galeri figure, .belge-resim { margin: 0; }
+.urun-galeri img, .belge-resim img { display: block; width: 100%; height: auto; aspect-ratio: 600 / 1304; border-radius: clamp(14px, 1.8vw, 22px); background: var(--yuzey);
+  box-shadow: 0 0 0 1px var(--cizgi), 0 30px 60px -34px rgba(0, 0, 0, .6); }
+.urun-galeri figcaption, .belge-resim figcaption { margin-top: 10px; font-size: 14px; line-height: 1.4; color: var(--soluk); }
+.belge-resim { margin-top: 28px; width: min(100%, 260px); }
+@media (max-width: 860px) {
+  .urun-galeri { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
