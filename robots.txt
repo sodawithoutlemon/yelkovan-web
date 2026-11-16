@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://yelkovan.ai/sitemap.xml
+Sitemap: https://yelkovan.ai/sitemap-sehirler.xml

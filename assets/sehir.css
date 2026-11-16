@@ -1,0 +1,16 @@
+/* Yalnız şehir sayfaları; assets/sehir.css. */
+.sehir .soluk{color:var(--ikincil);font-size:.92em}
+.sehir figure{margin:0 0 28px}
+.sehir figure img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block}
+.sehir figcaption{color:var(--ikincil);font-size:.82rem;margin-top:8px}
+.sehir ul.liste,.sehir ol.liste{padding-left:1.1em;margin:0 0 1.2em}
+.sehir .liste li{margin:.35em 0}
+.sehir table{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:.95rem}
+.sehir th,.sehir td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--cizgi)}
+.sehir thead th{color:var(--ikincil);font-weight:500}
+.sehir .tablo-kap{overflow-x:auto}
+.sehir .cta{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:16px;padding:22px;margin:28px 0}
+.sehir .cta h2{margin-top:0}
+.sehir .kaynak{color:var(--ikincil);font-size:.82rem;border-top:1px solid var(--cizgi);padding-top:14px;margin-top:32px}
+.sehir .bolge{columns:2 220px;list-style:none;padding:0}
+.sehir .bolge li{margin:.35em 0}
