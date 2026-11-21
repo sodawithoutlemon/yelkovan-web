@@ -64,7 +64,7 @@
 <nav class="sekme-gez" aria-label="Karnet"><a href="../../karnet/">Karnet</a><a href="../../karnet/destek/">Destek</a><a href="../../karnet/gizlilik/" aria-current="page">Gizlilik</a><a href="../../karnet/sartlar/">Şartlar</a><a href="../../karnet/hesap-silme/">Hesap silme</a></nav>
 <article class="belge">
 <h1>Karnet gizlilik eki</h1>
-<p class="tarih">Son güncelleme: 3 Kasım 2026</p>
+<p class="tarih">Son güncelleme: 21 Kasım 2026</p>
 <p class="ozet">Bu ek, <a href="../../legal/gizlilik/">Yelkovan Gizlilik Politikası</a>'nın parçasıdır ve Karnet uygulamasına özgü bilgileri içerir. Veri sorumlusu, haklarınız ve başvuru yolu ana politikada yazar.</p>
 
 <div class="not">
@@ -74,7 +74,7 @@
 <li>Harita ve yer bilgileri hesapsız açıktır. Mühürlemek için Apple, Google ya da e-postayla hesap açarsınız; gerçek adınız istenmez, takma adla görünürsünüz.</li>
 <li>Hesabınız, mühür yedeğiniz ve arkadaşlıklarınız Google Firebase'de, Avrupa'daki (Belçika) sunucularda tutulur.</li>
 <li>Paylaştıklarınız en az 1 saat gecikmeyle ve yalnız seçtiğiniz kişilere gider.</li>
-<li>Karnet'te reklam, analitik, çökme raporlama ve izleme yoktur; verilerinizi satmayız.</li>
+<li>Karnet 1.1'den itibaren ücretsiz sürümde kişiselleştirilmemiş reklam gösterilir, Pro'da reklam yoktur. Uygulamayı iyileştirmek için kullanım ve çökme verisi sayarız; Ayarlar'dan kapatabilirsiniz. İzleme yoktur, verilerinizi satmayız.</li>
 <li>Verilerinizi uygulamadan dışa aktarabilir, hesabınızı ve sunucudaki her şeyi tek adımda silebilirsiniz.</li>
 </ul>
 </div>
@@ -125,19 +125,26 @@
 <h2 id="harita">11. Harita ve yer bilgileri</h2>
 <p>Harita, OpenFreeMap'in sunduğu OpenStreetMap verisiyle çizilir. Haritayı kaydırdıkça telefonunuz o bölgenin harita karolarını OpenFreeMap'ten indirir; bu isteklerde OpenFreeMap IP adresinizi ve istenen bölgeyi görür. Konumunuz OpenFreeMap'e ayrıca gönderilmez. Yer adları ve bilgileri (OpenStreetMap, Wikidata, Overture Maps) ile yer fotoğrafları (Unsplash, Wikimedia Commons) uygulamanın içinde gelir; bunlar için ayrıca istek yapılmaz.</p>
 
-<h2 id="guvenlik">12. Güvenlik</h2>
+<h2 id="analitik">12. Analitik</h2>
+<p>Karnet 1.1'den itibaren, uygulamayı iyileştirmek için hangi bölümlerin kullanıldığını (ör. mühür basıldı, kartpostal gönderildi, hangi sekme açıldı) ve çökmeleri sayarız. Bu kayıtlarda kesin konumunuz, takma adınız, e-postanız, yazdıklarınız ve kareleriniz yoktur; konum yalnız yerin kimliği ve ilçesi olarak geçer. Kayıtlar hesabınıza bağlıdır; Google Firebase'de (Avrupa), Google Analytics ve Firebase Crashlytics'te tutulur. Ham kayıtlar 90 gün sonra silinir, günlük toplamlar kişisel değildir. Reklam kimliği okunmaz, izleme yoktur, veri satılmaz. Dayanak meşru menfaattir; Ayarlar › Gizlilik › "Kullanım ve çökme verisi"nden istediğiniz an kapatabilirsiniz. Hesabınızı silince analitik kayıtlarınız da silinir.</p>
+
+<h2 id="satin-alma">13. Satın almalar (Karnet Pro)</h2>
+<p>Karnet Pro isteğe bağlıdır; mühürlemek, harita, pasaport, ilçe vizeleri ve haftalık görevler her zaman ücretsizdir. Pro'yu App Store ya da Google Play üzerinden satın alırsınız; ödeme bilgileriniz bize gelmez. Satın alma kaydınız (ürün, tarih, mağaza ve hesap kimliğiniz) aboneliği doğrulamak için RevenueCat'te (işleyici) tutulur; sunucumuzda yalnız Pro durumunuz, ürün türü ve bitiş tarihi saklanır, makbuz ya da işlem numarası saklanmaz. Hesabınızı silince RevenueCat kaydınız da silinir. Aboneliği mağaza hesabınızdan yönetir ve iptal edersiniz.</p>
+
+<h2 id="reklam">14. Reklam</h2>
+<p>Karnet 1.1'den itibaren ücretsiz sürümde birkaç yerde (pasaport dizini, Görevler, Akış ve Haritaya dönüşte) Google AdMob ile <strong>kişiselleştirilmemiş</strong> reklam gösterilir. Kamerada, mühür anında ve haritanın üstünde reklam yoktur; Pro'da reklam yazılımı hiç çalışmaz. AdMob reklamı göstermek, ölçmek ve sahtekârlığı önlemek için cihaz türü, IP adresi ve Android'de reklam kimliği gibi verileri işler. iPhone'da reklam kimliği okunmaz ve "izleme izni" sorulmaz. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de ilk reklamdan önce rıza sorulur; seçiminizi Ayarlar › Reklam gizlilik seçenekleri'nden değiştirebilirsiniz. Verilerinizi satmayız.</p>
+
+<h2 id="guvenlik">15. Güvenlik</h2>
 <p>Sunucumuza yalnız gerçek Karnet uygulamasından gelen istekleri kabul etmek için Firebase App Check kullanılır: iPhone'da Apple App Attest (ya da DeviceCheck), Android'de Google Play Integrity, uygulamanın ve cihazın değiştirilmemiş olduğuna dair kısa ömürlü bir kanıt üretir. Sunucuya giden her bağlantı şifrelidir (HTTPS/TLS). Sunucu kayıtları (loglar) 7 gün tutulur ve kullanıcı kimliği ya da e-posta içermez. Veritabanı güvenlik kuralları gereği profilinizi, gelen kutunuzu ve yedeğinizi uygulama üzerinden yalnız siz okuyabilirsiniz.</p>
 
-<h2 id="kullanilmayan">13. Kullanılmayanlar</h2>
+<h2 id="kullanilmayan">16. Kullanılmayanlar</h2>
 <ul>
-<li>Reklam, reklam kimliği ve izleme yoktur; iPhone'da "izleme izni" sorulmaz.</li>
-<li>Uygulamada analitik ya da çökme raporlama yazılımı (SDK) yoktur.</li>
-<li>Uygulama içi satın alma ve abonelik yoktur; Karnet tamamen ücretsizdir.</li>
+<li>İzleme yoktur; iPhone'da reklam kimliği okunmaz ve "izleme izni" sorulmaz. Reklamlar kişiselleştirilmez.</li>
 <li>Uygulama rehberinize, mikrofonunuza ve takviminize erişmez; konumu arka planda kullanmaz.</li>
-<li>Verilerinizi satmayız ve reklam için paylaşmayız.</li>
+<li>Verilerinizi satmayız; reklam kişiselleştirmesi için paylaşmayız.</li>
 </ul>
 
-<h2 id="saglayicilar">14. Hizmet sağlayıcılar</h2>
+<h2 id="saglayicilar">17. Hizmet sağlayıcılar</h2>
 <table class="tablo">
 <thead><tr><th>Sağlayıcı</th><th>Ne için</th><th>Ne zaman</th></tr></thead>
 <tbody>
@@ -147,12 +154,15 @@
 <tr><td>E-posta hizmeti (info@yelkovan.ai)</td><td data-b="Ne için">Doğrulama kodu e-postası</td><td data-b="Ne zaman">E-postayla hesap açarken</td></tr>
 <tr><td>MET Norway</td><td data-b="Ne için">Hava tahmini (yalnız ilçe merkezi, sunucumuzdan)</td><td data-b="Ne zaman">Mühür anında</td></tr>
 <tr><td>OpenFreeMap</td><td data-b="Ne için">Harita karoları</td><td data-b="Ne zaman">Haritayı kullandığınızda</td></tr>
+<tr><td>Google Analytics for Firebase, Firebase Crashlytics</td><td data-b="Ne için">Kullanım sayımı ve çökme raporları</td><td data-b="Ne zaman">Ayarlar'da "Kullanım ve çökme verisi" açıkken</td></tr>
+<tr><td>RevenueCat</td><td data-b="Ne için">Pro satın alımlarının doğrulanması</td><td data-b="Ne zaman">Pro satın aldığınızda ya da geri yüklediğinizde</td></tr>
+<tr><td>Google AdMob</td><td data-b="Ne için">Kişiselleştirilmemiş reklam</td><td data-b="Ne zaman">Ücretsiz sürümde, reklam yerlerinde</td></tr>
 </tbody>
 </table>
 <p>Firestore, Cloud Storage ve Cloud Functions Avrupa Birliği'nde (Belçika) çalışır. Firebase Authentication ve Cloud Messaging Google'ın küresel altyapısında çalışır; bu hizmetlerin verisi ABD dahil başka ülkelerde işlenebilir. Yurt dışına aktarım ve hukuki dayanaklar ana politikada yazar.</p>
-<p>Gizlilik politikaları: <a href="https://policies.google.com/privacy" rel="noopener">Google</a> · <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase</a> · <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> · <a href="https://api.met.no/doc/TermsOfService" rel="noopener">MET Norway</a> · <a href="https://openfreemap.org/" rel="noopener">OpenFreeMap</a></p>
+<p>Gizlilik politikaları: <a href="https://policies.google.com/privacy" rel="noopener">Google</a> · <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase</a> · <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> · <a href="https://api.met.no/doc/TermsOfService" rel="noopener">MET Norway</a> · <a href="https://openfreemap.org/" rel="noopener">OpenFreeMap</a> · <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a> · <a href="https://policies.google.com/technologies/ads" rel="noopener">Google reklamları</a></p>
 
-<h2 id="saklama">15. Saklama</h2>
+<h2 id="saklama">18. Saklama</h2>
 <table class="tablo">
 <thead><tr><th>Ne</th><th>Ne kadar</th></tr></thead>
 <tbody>
@@ -166,10 +176,12 @@
 <tr><td>Gönderilemeyen bildirimler</td><td data-b="Ne kadar">2 gün</td></tr>
 <tr><td>Kapanan itiraz ve bildirim (şikâyet) kayıtları</td><td data-b="Ne kadar">180 gün</td></tr>
 <tr><td>Sunucu kayıtları (loglar)</td><td data-b="Ne kadar">7 gün</td></tr>
+<tr><td>Kullanım kayıtları (ham) ve çökme raporları</td><td data-b="Ne kadar">90 gün</td></tr>
+<tr><td>Pro satın alma kaydı (RevenueCat) ve Pro durumu</td><td data-b="Ne kadar">Hesabınızı silene kadar</td></tr>
 </tbody>
 </table>
 
-<h2 id="haklar">16. Dışa aktarma ve silme</h2>
+<h2 id="haklar">19. Dışa aktarma ve silme</h2>
 <ul>
 <li><strong>Ayarlar › Verilerimi dışa aktar:</strong> bütün verileriniz ve kendi kareleriniz dosya olarak, ücretsiz.</li>
 <li><strong>Ayarlar › Hesap › Hesabı sil:</strong> sunucudaki her şey ve bu telefondaki veriler. Ayrıntı: <a href="../../karnet/hesap-silme/">Karnet hesap ve veri silme</a>.</li>
@@ -178,10 +190,10 @@
 </ul>
 <p>Erişim, düzeltme, itiraz ve diğer haklarınız ile başvuru yolu <a href="../../legal/gizlilik/">ana politikada</a> ve <a href="../../legal/kvkk/">KVKK aydınlatma metninde</a> yazar.</p>
 
-<h2 id="cocuklar">17. Çocuklar</h2>
+<h2 id="cocuklar">20. Çocuklar</h2>
 <p>Karnet 13 yaşın altındaki çocuklara yönelik değildir. Çocuklarla ilgili genel kurallar <a href="../../legal/gizlilik/#cocuklar">ana politikada</a> yazar.</p>
 
-<h2 id="iletisim">18. İletişim</h2>
+<h2 id="iletisim">21. İletişim</h2>
 <p><a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a></p>
 </article>
   </div>
