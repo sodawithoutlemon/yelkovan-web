@@ -63,4 +63,8 @@
   <url><loc>https://yelkovan.ai/en/mapandmore/delete-account/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://yelkovan.ai/mapandmore/hesap-silme/"/><xhtml:link rel="alternate" hreflang="en" href="https://yelkovan.ai/en/mapandmore/delete-account/"/></url>
   <url><loc>https://yelkovan.ai/mapandmore/veri/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://yelkovan.ai/mapandmore/veri/"/><xhtml:link rel="alternate" hreflang="en" href="https://yelkovan.ai/en/mapandmore/data/"/></url>
   <url><loc>https://yelkovan.ai/en/mapandmore/data/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://yelkovan.ai/mapandmore/veri/"/><xhtml:link rel="alternate" hreflang="en" href="https://yelkovan.ai/en/mapandmore/data/"/></url>
+  <url><loc>https://yelkovan.ai/jackall/destek/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://yelkovan.ai/jackall/destek/"/><xhtml:link rel="alternate" hreflang="en" href="https://yelkovan.ai/en/jackall/support/"/></url>
+  <url><loc>https://yelkovan.ai/en/jackall/support/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://yelkovan.ai/jackall/destek/"/><xhtml:link rel="alternate" hreflang="en" href="https://yelkovan.ai/en/jackall/support/"/></url>
+  <url><loc>https://yelkovan.ai/jackall/gizlilik/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://yelkovan.ai/jackall/gizlilik/"/><xhtml:link rel="alternate" hreflang="en" href="https://yelkovan.ai/en/jackall/privacy/"/></url>
+  <url><loc>https://yelkovan.ai/en/jackall/privacy/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://yelkovan.ai/jackall/gizlilik/"/><xhtml:link rel="alternate" hreflang="en" href="https://yelkovan.ai/en/jackall/privacy/"/></url>
 </urlset>
